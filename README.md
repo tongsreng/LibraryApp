@@ -1,12 +1,12 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+LibaryApp is intended to manage books and process of borrowing/returning books.
 
-## Folder Structure
+## Installation and run
 
-The workspace contains two folders by default, where:
+First, team leader needs to fork the project and then let your team members to clone your project.  
 
-- `src`: the folder to maintain sources
+- `backlog`: List all tasks in one place
 - `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
