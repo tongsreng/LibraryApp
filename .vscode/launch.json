@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SelectData",
+            "request": "launch",
+            "mainClass": "samples.db.SelectData",
+            "projectName": "LibraryApp_3ae05fae"
+        },
+        {
+            "type": "java",
+            "name": "InsertData",
+            "request": "launch",
+            "mainClass": "samples.db.InsertData",
+            "projectName": "LibraryApp_3ae05fae"
+        },
+        {
+            "type": "java",
+            "name": "CreateProductTable",
+            "request": "launch",
+            "mainClass": "samples.db.CreateProductTable",
+            "projectName": "LibraryApp_3ae05fae"
+        },
+        {
+            "type": "java",
+            "name": "ConnectDB",
+            "request": "launch",
+            "mainClass": "samples.db.ConnectDB",
+            "projectName": "LibraryApp_3ae05fae"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
