@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "LibraryApp_cfd186b8"
+        },
+        {
+            "type": "java",
             "name": "SelectData",
             "request": "launch",
             "mainClass": "samples.db.SelectData",
