@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "index",
+            "request": "launch",
+            "mainClass": "index",
+            "projectName": "LibraryApp_cfd186b8"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
