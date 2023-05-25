@@ -16,6 +16,5 @@ public class App extends Application {
         stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root));
         stage.show();
-        
     }
 }
