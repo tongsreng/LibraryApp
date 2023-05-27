@@ -42,4 +42,5 @@ public void updateBooks(int[] bookIds, String[] titles, String[] authors, int[] 
 
     // Commit the transaction
     transaction.commit();
+    //
 }
