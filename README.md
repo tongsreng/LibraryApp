@@ -42,7 +42,7 @@ LibaryApp is intended to manage books and process of borrowing/returning books.
 First, team leader needs to fork the project and then let your team members to clone your project.  
 Run the following command:
 ```ruby
-git clone https://github.com/users/Seakmeng001/projects/1
+git clone https://github.com/Seakmeng001/LibraryApp
 ```
 
 - `backlog`: List all tasks in one place
