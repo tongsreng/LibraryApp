@@ -9,6 +9,7 @@ LibraryApp is a window application that allows users to manage books and the pro
 - Users can search for books in the library's catalog, view their borrowing history, and renew or return books.
 - LibraryApp also allows users to create wish lists and receive notifications when new books are added to the catalog.
 - LibraryApp is a free application that is available for download from the Windows Store.
+
 # Features
 
 Here are some of the features of LibraryApp:
@@ -32,6 +33,17 @@ If you are a library user, I would recommend using LibraryApp. It is a free and 
 # Technologies
 <h3 align="left"></h3>
 <p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> </p>
+
+# Members
+* [SOEM Seakmeng](https://github.com/Seakmeng001) - *Leader*
+* [TO Volackangy](https://github.com/SreypichTO)
+* [UN Sengly](https://github.com/Unsengly)
+* [Dara VEASNA](https://github.com/daraaveasna)
+* [Chanvatthanak SOM](https://github.com/Anonymousdesu)
+
+> Manage Java projects in Visual Studio Code
+
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/microsoft/vscode-java-dependency/windows.yml?label=Windows%20Build&style=flat-square)](https://github.com/microsoft/vscode-java-dependency/actions/workflows/windows.yml?query=branch%3Amain)
 
 # Getting Started
 
