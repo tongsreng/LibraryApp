@@ -8,9 +8,33 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "App",
+            "projectName": "LibraryApp_c3cbe694",
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "LibraryApp_b64fd3b9",
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Application.App",
+            "projectName": "LibraryApp_b64fd3b9",
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "Application.App",
             "projectName": "LibraryApp_cfd186b8",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         },
         {
             "type": "java",
@@ -18,7 +42,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_cfd186b8",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         },
         {
             "type": "java",
@@ -26,7 +50,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_c9ee5b8d",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         },
         {
             "type": "java",
@@ -34,7 +58,7 @@
             "request": "launch",
             "mainClass": "config.DatabaseConnection",
             "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         },
         {
             "type": "java",
@@ -42,14 +66,14 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         },
         {
             "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path \"D:/Introduction/Project/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"D:/ITC/I3/SreypichTO/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml",
         }
     ]
 }
