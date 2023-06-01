@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="97.0" prefHeight="475.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="idbook" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="titlbook" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="genreBook" prefWidth="75.0" text="Genre" />
+            <TableColumn fx:id="author" prefWidth="75.0" text="Author" />
+            <TableColumn fx:id="publish" prefWidth="75.0" text="Publish" />
+            <TableColumn fx:id="qty" prefWidth="75.0" text="QTY" />
+            <TableColumn fx:id="bestSeller" prefWidth="75.0" text="Best seller" />
+        </columns>
+      </TableView>
+      <Icon fx:id="arrowBack" content="ARROW_BACK" layoutX="11.0" layoutY="29.0" style="-fx-border-color: gray;" />
+      <Button fx:id="addbook" layoutX="14.0" layoutY="410.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: gray;" text="Add book">
+         <effect>
+            <Shadow />
+         </effect>
+      </Button>
+   </children>
+</Pane>
