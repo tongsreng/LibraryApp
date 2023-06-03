@@ -7,24 +7,24 @@
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="643.0" style="-fx-background-color: #62929e;" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="List_controller">
    <children>
-      <TableView layoutX="97.0" prefHeight="475.0" prefWidth="546.0">
+      <TableView layoutX="97.0" prefHeight="475.0" prefWidth="548.0" style="-fx-background-color: #b8dbd9;">
         <columns>
-          <TableColumn fx:id="idbook" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="titlbook" prefWidth="75.0" text="Title" />
-            <TableColumn fx:id="genreBook" prefWidth="75.0" text="Genre" />
-            <TableColumn fx:id="author" prefWidth="75.0" text="Author" />
-            <TableColumn fx:id="publish" prefWidth="75.0" text="Publish" />
-            <TableColumn fx:id="qty" prefWidth="75.0" text="QTY" />
-            <TableColumn fx:id="bestSeller" prefWidth="75.0" text="Best seller" />
+          <TableColumn fx:id="idbook" prefWidth="75.0" style="-fx-background-color: #62929e;" text="ID" />
+          <TableColumn fx:id="titlbook" prefWidth="83.33335876464844" style="-fx-background-color: #62929e;" text="Title" />
+            <TableColumn fx:id="genreBook" prefWidth="83.33331298828125" style="-fx-background-color: #62929e;" text="Genre" />
+            <TableColumn fx:id="author" prefWidth="82.6666259765625" style="-fx-background-color: #62929e;" text="Author" />
+            <TableColumn fx:id="publish" prefWidth="82.0" style="-fx-background-color: #62929e;" text="Publish" />
+            <TableColumn fx:id="qty" prefWidth="65.33328247070312" style="-fx-background-color: #62929e;" text="QTY" />
+            <TableColumn fx:id="bestSeller" prefWidth="74.66668701171875" style="-fx-background-color: #62929e;" text="Best seller" />
         </columns>
       </TableView>
-      <Icon fx:id="arrowBack" content="ARROW_BACK" layoutX="11.0" layoutY="29.0" style="-fx-border-color: gray;" />
-      <Button fx:id="addbook" layoutX="14.0" layoutY="410.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: gray;" text="Add book">
+      <Icon fx:id="arrowBack" content="ARROW_BACK" layoutX="11.0" layoutY="29.0" style="-fx-border-color: #324a5f;" />
+      <Button fx:id="addBook" layoutX="7.0" layoutY="426.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #546a7b;" text="Add book">
          <effect>
             <Shadow />
          </effect>
       </Button>
    </children>
-</Pane>
+</fx:root>

@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 
-public class PleaseProvideControllerClassName {
+public class List_controller {
 
     @FXML
     private ResourceBundle resources;
@@ -42,15 +42,15 @@ public class PleaseProvideControllerClassName {
 
     @FXML
     void initialize() {
-        assert addbook != null : "fx:id=\"addbook\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert arrowBack != null : "fx:id=\"arrowBack\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert author != null : "fx:id=\"author\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert bestSeller != null : "fx:id=\"bestSeller\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert genreBook != null : "fx:id=\"genreBook\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert idbook != null : "fx:id=\"idbook\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert publish != null : "fx:id=\"publish\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert qty != null : "fx:id=\"qty\" was not injected: check your FXML file 'List Books.fxml'.";
-        assert titlbook != null : "fx:id=\"titlbook\" was not injected: check your FXML file 'List Books.fxml'.";
+        assert addbook != null : "fx:id=\"addbook\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert arrowBack != null : "fx:id=\"arrowBack\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert author != null : "fx:id=\"author\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert bestSeller != null : "fx:id=\"bestSeller\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert genreBook != null : "fx:id=\"genreBook\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert idbook != null : "fx:id=\"idbook\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert publish != null : "fx:id=\"publish\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert qty != null : "fx:id=\"qty\" was not injected: check your FXML file 'listBook_v2.fxml'.";
+        assert titlbook != null : "fx:id=\"titlbook\" was not injected: check your FXML file 'listBook_v2.fxml'.";
 
     }
 
