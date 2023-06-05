@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="475.0" style="-fx-background-color: #b8dbd9;" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root fx:id="regustPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="475.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register_controller">
    <children>
-      <TextField fx:id="fullName" layoutX="45.0" layoutY="98.0" prefHeight="29.0" prefWidth="168.0" promptText="Full Name" />
-      <TextField fx:id="idStd" layoutX="273.0" layoutY="98.0" prefHeight="29.0" prefWidth="168.0" promptText="ID" />
-      <TextField fx:id="department" layoutX="272.0" layoutY="175.0" prefHeight="29.0" prefWidth="168.0" promptText="Department" />
-      <TextField fx:id="emailSTD" layoutX="273.0" layoutY="266.0" prefHeight="29.0" prefWidth="168.0" promptText="Name" text="Emai@_accgmail.com" />
-      <TextField fx:id="contact" layoutX="273.0" layoutY="351.0" prefHeight="29.0" prefWidth="168.0" promptText="0......" />
-      <TextField fx:id="address" layoutX="42.0" layoutY="351.0" prefHeight="29.0" prefWidth="175.0" promptText="homeNum, st, city, country" />
-      <DatePicker fx:id="DOB" layoutX="45.0" layoutY="266.0" prefHeight="29.0" prefWidth="175.0" promptText="Birthdate" />
-      <TextField fx:id="gender" layoutX="45.0" layoutY="175.0" prefHeight="29.0" prefWidth="168.0" promptText="Gender" />
+      <TextField fx:id="fullName" layoutX="45.0" layoutY="98.0" onAction="#putName" prefHeight="29.0" prefWidth="168.0" promptText="Full Name" />
+      <TextField fx:id="idStd" layoutX="273.0" layoutY="98.0" onAction="#putID" prefHeight="29.0" prefWidth="168.0" promptText="ID" />
+      <TextField fx:id="department" layoutX="272.0" layoutY="175.0" onAction="#putDep" prefHeight="29.0" prefWidth="168.0" promptText="Department" />
+      <TextField fx:id="emailSTD" layoutX="273.0" layoutY="266.0" onAction="#putEmail" prefHeight="29.0" prefWidth="168.0" promptText="Name" text="Emai@_accgmail.com" />
+      <TextField fx:id="contact" layoutX="273.0" layoutY="351.0" onAction="#putCintact" prefHeight="29.0" prefWidth="168.0" promptText="0......" />
+      <TextField fx:id="address" layoutX="42.0" layoutY="351.0" onAction="#putAddress" prefHeight="29.0" prefWidth="175.0" promptText="homeNum, st, city, country" />
+      <DatePicker fx:id="DOB" layoutX="45.0" layoutY="269.0" onAction="#chooseDate" prefHeight="26.0" prefWidth="175.0" promptText="Birthdate" style="-fx-background-color: #B9EDDD;" />
+      <TextField fx:id="gender" layoutX="45.0" layoutY="175.0" onAction="#putGender" prefHeight="29.0" prefWidth="168.0" promptText="Gender" />
       <Label fx:id="Label1" layoutX="163.0" layoutY="21.0" prefHeight="32.0" prefWidth="188.0" text="Register Student" textFill="#62929e">
          <font>
             <Font name="Times New Roman Bold" size="25.0" />
@@ -54,7 +54,7 @@
             <Font name="Times New Roman Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="label8" layoutX="274.0" layoutY="240.0" text="Social Account" textFill="#62929e">
+      <Label fx:id="label8" layoutX="279.0" layoutY="233.0" text="Social Account" textFill="#62929e">
          <font>
             <Font name="Times New Roman Bold" size="13.0" />
          </font>
@@ -64,10 +64,13 @@
             <Font name="Times New Roman Bold" size="13.0" />
          </font>
       </Label>
-      <Button fx:id="register" layoutX="368.0" layoutY="433.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #62929e;" text="Register">
+      <Button fx:id="registerBtn" layoutX="368.0" layoutY="433.0" mnemonicParsing="false" onAction="#Click2RegisBTN" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #62929e;" text="Register">
          <font>
             <Font name="Times New Roman Bold" size="13.0" />
          </font>
+         <effect>
+            <DropShadow height="55.69" radius="18.6725" />
+         </effect>
       </Button>
       <Icon fx:id="backRegist" content="ARROW_BACK" layoutX="41.0" layoutY="437.0">
          <effect>

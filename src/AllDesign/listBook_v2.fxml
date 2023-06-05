@@ -7,9 +7,9 @@
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.Pane?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="643.0" style="-fx-background-color: #62929e;" type="Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="List_controller">
+<fx:root fx:id="listPane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="643.0" style="-fx-background-color: #62929e;" type="Pane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="List_controller">
    <children>
-      <TableView layoutX="97.0" prefHeight="475.0" prefWidth="548.0" style="-fx-background-color: #b8dbd9;">
+      <TableView fx:id="listPane" layoutX="97.0" prefHeight="475.0" prefWidth="548.0" style="-fx-background-color: #b8dbd9;">
         <columns>
           <TableColumn fx:id="idbook" prefWidth="75.0" style="-fx-background-color: #62929e;" text="ID" />
           <TableColumn fx:id="titlbook" prefWidth="83.33335876464844" style="-fx-background-color: #62929e;" text="Title" />
@@ -21,7 +21,7 @@
         </columns>
       </TableView>
       <Icon fx:id="arrowBack" content="ARROW_BACK" layoutX="11.0" layoutY="29.0" style="-fx-border-color: #324a5f;" />
-      <Button fx:id="addBook" layoutX="7.0" layoutY="426.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #546a7b;" text="Add book">
+      <Button fx:id="addBook" layoutX="11.0" layoutY="431.0" mnemonicParsing="false" onAction="#onAddBookClick" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #546a7b;" text="Add book">
          <effect>
             <Shadow />
          </effect>
