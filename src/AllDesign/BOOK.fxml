@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -19,13 +20,19 @@
             <TableColumn fx:id="bestSeller" prefWidth="74.66668701171875" style="-fx-background-color: #ACB1D6;" text="Best seller" />
          </columns>
       </TableView>
-      <Button layoutX="3.0" layoutY="441.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #ACB1D6;" text="Back">
+      <Button layoutX="3.0" layoutY="442.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #ACB1D6;" text="Back">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
-      <Button layoutX="2.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-color: #ACB1D6;" text="Add book">
+         </font>
+         <effect>
+            <DropShadow radius="8.25" width="14.0" />
+         </effect></Button>
+      <Button fx:id="AddBookBtn" layoutX="2.0" layoutY="405.0" mnemonicParsing="false" onAction="#ADDbook" style="-fx-background-color: #ACB1D6;" text="Add book">
          <font>
             <Font name="System Bold" size="12.0" />
-         </font></Button>
+         </font>
+         <effect>
+            <DropShadow radius="8.25" width="14.0" />
+         </effect></Button>
    </children>
 </AnchorPane>

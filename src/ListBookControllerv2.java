@@ -1,6 +1,8 @@
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -11,6 +13,9 @@ public class ListBookControllerv2 {
 
     @FXML
     private URL location;
+
+    @FXML
+    private Button AddBookBtn;
 
     @FXML
     private TableColumn<?, ?> author;
@@ -36,10 +41,15 @@ public class ListBookControllerv2 {
     @FXML
     private TableColumn<?, ?> titlbook;
 
-  
+    @FXML
+    void ADDbook(ActionEvent event) {
+        String ID, title, genre, author,publish;
+        int qty, bestSeller;
+    }
 
     @FXML
     void initialize() {
+        assert AddBookBtn != null : "fx:id=\"AddBookBtn\" was not injected: check your FXML file 'BOOK.fxml'.";
         assert author != null : "fx:id=\"author\" was not injected: check your FXML file 'BOOK.fxml'.";
         assert bestSeller != null : "fx:id=\"bestSeller\" was not injected: check your FXML file 'BOOK.fxml'.";
         assert genreBook != null : "fx:id=\"genreBook\" was not injected: check your FXML file 'BOOK.fxml'.";
