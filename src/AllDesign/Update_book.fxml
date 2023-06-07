@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="595.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+   <children>
+      <Label layoutX="195.0" layoutY="20.0" text="Update Book" textFill="#5f72a1">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="211.0" text="New ID:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="260.0" text="New title:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="302.0" text="New Genre:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="344.0" text="New Author:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="383.0" text="New publish:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="425.0" text="New QTY:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="464.0" text="New Import date:" textFill="#5f72a1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="292.0" layoutY="208.0" prefHeight="25.0" prefWidth="167.0" promptText="new id" style="-fx-background-color: white;" />
+      <TextField layoutX="293.0" layoutY="255.0" prefHeight="25.0" prefWidth="167.0" promptText="new title" style="-fx-background-color: white;" />
+      <TextField layoutX="293.0" layoutY="297.0" prefHeight="25.0" prefWidth="167.0" promptText="Ex: History" style="-fx-background-color: white;" />
+      <TextField layoutX="293.0" layoutY="339.0" prefHeight="25.0" prefWidth="167.0" promptText=" Author's name" style="-fx-background-color: white;" />
+      <TextField layoutX="293.0" layoutY="420.0" prefHeight="25.0" prefWidth="167.0" promptText="number of book" style="-fx-background-color: white;" />
+      <Label layoutX="169.0" layoutY="106.0" text="Plesea enter ID of book you want to update" textFill="#5f72a1">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="145.0" layoutY="132.0" prefHeight="25.0" prefWidth="311.0" promptText="Old book ID" style="-fx-background-color: white;" />
+      <DatePicker fx:id="publishPicker" layoutX="295.0" layoutY="381.0" prefHeight="25.0" prefWidth="167.0" promptText="pick date" style="-fx-background-color: white;" />
+      <DatePicker fx:id="importDatePicker" layoutX="293.0" layoutY="462.0" prefHeight="25.0" prefWidth="167.0" promptText="import date" style="-fx-background-color: white;" />
+      <Button layoutX="142.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="382.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchToListbook" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: #8294C4;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

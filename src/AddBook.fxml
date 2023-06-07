@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="573.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="label_addBook" layoutX="196.0" layoutY="38.0" prefHeight="41.0" prefWidth="215.0" text="ADD BOOK" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <TextField fx:id="addAuthor" layoutX="280.0" layoutY="313.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book author" />
+      <TextField fx:id="addGenre" layoutX="280.0" layoutY="256.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Genre" />
+      <TextField fx:id="addTitle" layoutX="280.0" layoutY="201.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book title" />
+      <TextField fx:id="addID" layoutX="280.0" layoutY="146.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" />
+      <TextField fx:id="addQty" layoutX="280.0" layoutY="366.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of book" />
+      <Label layoutX="122.0" layoutY="263.0" text="Genre" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="208.0" text="Title" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="153.0" text="ID" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="348.0" />
+      <Label layoutX="122.0" layoutY="319.0" text="Author" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="432.0" text="Publish" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="373.0" text="QTY" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="489.0" text="Best seller" textFill="#8294c4">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addBestSell" layoutX="280.0" layoutY="482.0" prefHeight="34.0" prefWidth="188.0" promptText="Input numer of best sell-book " />
+      <TextField fx:id="addPub" layoutX="280.0" layoutY="425.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" />
+      <Button fx:id="BTN_AddBook" layoutX="362.0" layoutY="566.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_back" layoutX="122.0" layoutY="566.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #434242;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

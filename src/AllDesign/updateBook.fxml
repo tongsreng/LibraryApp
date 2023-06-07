@@ -1,0 +1,29 @@
+
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
+
+public class GUIController {
+
+    @FXML
+    private TableColumn<?, ?> col_auther;
+
+    @FXML
+    private TableColumn<?, ?> col_category;
+
+    @FXML
+    private TableColumn<?, ?> col_date;
+
+    @FXML
+    private TableColumn<?, ?> col_id;
+
+    @FXML
+    private TableColumn<?, ?> col_quantity;
+
+    @FXML
+    void table_user(ActionEvent event) {
+
+    }
+
+}

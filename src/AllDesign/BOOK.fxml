@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="703.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+   <children>
+      <TableView fx:id="listPane" layoutX="81.0" prefHeight="543.0" prefWidth="645.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="idbook" minWidth="11.0" prefWidth="63.33334732055664" style="-fx-background-color: #ACB1D6;" text="ID" />
+            <TableColumn fx:id="titlbook" prefWidth="88.66667938232422" style="-fx-background-color: #ACB1D6;" text="Title" />
+            <TableColumn fx:id="genreBook" prefWidth="74.66667175292969" style="-fx-background-color: #ACB1D6;" text="Genre" />
+            <TableColumn fx:id="author" prefWidth="97.3333740234375" style="-fx-background-color: #ACB1D6;" text="Author" />
+            <TableColumn fx:id="publish" prefWidth="96.0" style="-fx-background-color: #ACB1D6;" text="Publish" />
+            <TableColumn fx:id="ImportDate" prefWidth="104.66671752929688" style="-fx-background-color: #ACB1D6;" text="Import Date" />
+            <TableColumn fx:id="qty" prefWidth="94.0" style="-fx-background-color: #ACB1D6;" text="QTY" />
+         </columns>
+      </TableView>
+      <Button fx:id="backBTN" layoutX="2.0" layoutY="487.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ACB1D6;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="9.5" radius="2.125" width="1.0" />
+         </effect></Button>
+      <Button fx:id="AddBookBtn" layoutX="2.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToAddBook" style="-fx-background-color: #ACB1D6;" text="Add book">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="9.75" radius="4.4375" width="10.0" />
+         </effect></Button>
+   </children>
+</AnchorPane>
