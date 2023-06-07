@@ -22,7 +22,7 @@ public class GUIController {
 
     }
     public void switchToLogin(ActionEvent event) throws IOException{
-         root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+         root = FXMLLoader.load(getClass().getResource("login.fxml"));
         stage =(Stage)((Node)event.getSource()).getScene().getWindow();
         scene= new Scene(root);
         stage.setScene(scene);

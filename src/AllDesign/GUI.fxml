@@ -5,21 +5,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="14.0" layoutY="66.0" mnemonicParsing="false" text="List books" />
-      <Button layoutX="14.0" layoutY="102.0" mnemonicParsing="false" text="Register new students" />
-      <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" text="Update books" />
-      <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" text="Add new books" />
-      <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" text="Manage books categories" />
-      <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" text="Make new copies of books" />
-      <Button layoutX="14.0" layoutY="285.0" mnemonicParsing="false" text=" Register new borring books record" />
-      <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" text="Register new return books record" />
-      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" text="Login " />
+      <Button layoutX="14.0" layoutY="66.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="List books" />
+      <Button layoutX="14.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #FFEAD2;" text="Register new students" />
+      <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="Update books" />
+      <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="Add new books" />
+      <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="Manage books categories" />
+      <Button layoutX="14.0" layoutY="248.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="Make new copies of books" />
+      <Button layoutX="14.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text=" Register new borring books record" />
+      <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: #FFEAD2;" text="Register new return books record" />
+      <Button layoutX="522.0" layoutY="352.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" style="-fx-background-color: #8294C4;" text="Login " />
       <Text layoutX="238.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library App">
          <font>
-            <Font size="18.0" />
+            <Font name="Georgia" size="29.0" />
          </font>
       </Text>
    </children>
