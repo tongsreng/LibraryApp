@@ -2,12 +2,13 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
    <children>
       <Text layoutX="251.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
          <font>
@@ -15,9 +16,14 @@
          </font>
       </Text>
       <Text layoutX="21.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter email" />
-      <TextField blendMode="EXCLUSION" layoutX="21.0" layoutY="76.0" />
+      <TextField blendMode="EXCLUSION" layoutX="21.0" layoutY="76.0" prefHeight="25.0" prefWidth="210.0" />
       <Text layoutX="21.0" layoutY="141.0" stroke="#000001" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <TextField blendMode="EXCLUSION" layoutX="21.0" layoutY="162.0" />
-      <Button layoutX="246.0" layoutY="219.0" mnemonicParsing="false" text="Login" />
+      <TextField blendMode="EXCLUSION" layoutX="21.0" layoutY="162.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button layoutX="61.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="98.0" text="Login" />
+      <ImageView fitHeight="251.0" fitWidth="168.0" layoutX="388.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../S2/Website_class/HOK%20Tin/TP/cup.jpg" />
+         </image>
+      </ImageView>
    </children>
-</fx:root>
+</AnchorPane>

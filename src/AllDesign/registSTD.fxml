@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
    <children>
       <Label fx:id="labelRegis" layoutX="96.0" layoutY="16.0" prefHeight="41.0" prefWidth="314.0" text="Registering Student" textFill="#688deb">
          <font>
@@ -75,7 +75,7 @@
       <TextField fx:id="putAdd" layoutX="28.0" layoutY="328.0" />
       <TextField fx:id="putCont" layoutX="285.0" layoutY="328.0" />
       <DatePicker fx:id="datePick" layoutX="27.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" promptText="Choose Date" />
-      <Button layoutX="33.0" layoutY="440.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="50.0" style="-fx-background-color: #ACB1D6;" text="Back">
+      <Button layoutX="33.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="31.0" prefWidth="50.0" style="-fx-background-color: #ACB1D6;" text="Back">
          <font>
             <Font name="Georgia" size="12.0" />
          </font>
