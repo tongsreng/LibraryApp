@@ -73,7 +73,13 @@ public void switchToAddBook(ActionEvent event) throws IOException{
    stage.setScene(scene);
    stage.show(); 
 }
-
+public void switchTobUSINESSBook(ActionEvent event) throws IOException{
+    root = FXMLLoader.load(getClass().getResource("Business Books.fxml"));
+   stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+   scene= new Scene(root);
+   stage.setScene(scene);
+   stage.show(); 
+}
 
 
 }

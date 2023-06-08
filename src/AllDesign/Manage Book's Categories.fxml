@@ -14,7 +14,7 @@
          </font>
       </Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fb1fff" height="158.0" layoutX="15.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
-      <Button layoutX="18.0" layoutY="183.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="122.0" text="Business">
+      <Button layoutX="18.0" layoutY="183.0" mnemonicParsing="false" onAction="#switchTobUSINESSBook" prefHeight="37.0" prefWidth="122.0" text="Business">
          <font>
             <Font size="18.0" />
          </font>
@@ -117,7 +117,7 @@
             <Font size="13.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="130.0" text="&lt;  Back">
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="27.0" prefWidth="130.0" text="&lt;  Back">
          <font>
             <Font size="20.0" />
          </font>
