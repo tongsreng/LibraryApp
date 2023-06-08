@@ -24,18 +24,18 @@
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font></Text>
-      <Button layoutX="35.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Login">
+      <Button layoutX="35.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Login" textFill="WHITE">
          <font>
-            <Font name="Georgia Bold" size="12.0" />
+            <Font name="Georgia" size="16.0" />
          </font></Button>
       <ImageView fitHeight="465.0" fitWidth="307.0" layoutX="344.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="27.03369140625" AnchorPane.topAnchor="3.0">
          <image>
             <Image url="@../../../../S2/Website_class/HOK%20Tin/TP/book-purple.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="179.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToregisterStudent" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Register">
+      <Button layoutX="179.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToregisterStudent" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Register" textFill="WHITE">
          <font>
-            <Font name="Georgia Bold" size="12.0" />
+            <Font name="Georgia" size="16.0" />
          </font></Button>
       <TextField layoutX="34.0" layoutY="134.0" prefHeight="33.0" prefWidth="243.0" promptText="itc.gic.i3@gmail.com" style="-fx-background-color: white;" />
       <PasswordField layoutX="34.0" layoutY="217.0" prefHeight="33.0" prefWidth="243.0" promptText="password" style="-fx-background-color: white;">

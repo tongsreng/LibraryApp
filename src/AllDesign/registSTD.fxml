@@ -71,7 +71,7 @@
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putEmauil" layoutX="286.0" layoutY="258.0" />
+      <TextField fx:id="putEmauil" layoutX="286.0" layoutY="258.0" promptText="itc_gic_i3@gamail.com" />
       <TextField fx:id="putAdd" layoutX="28.0" layoutY="328.0" />
       <TextField fx:id="putCont" layoutX="285.0" layoutY="328.0" />
       <DatePicker fx:id="datePick" layoutX="27.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" promptText="Choose Date" />

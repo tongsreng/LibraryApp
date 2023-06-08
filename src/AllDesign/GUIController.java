@@ -80,6 +80,12 @@ public void switchTobUSINESSBook(ActionEvent event) throws IOException{
    stage.setScene(scene);
    stage.show(); 
 }
-
+public void switchToCopyofBook(ActionEvent event) throws IOException{
+    root = FXMLLoader.load(getClass().getResource("Make new copies of books.fxml"));
+   stage =(Stage)((Node)event.getSource()).getScene().getWindow();
+   scene= new Scene(root);
+   stage.setScene(scene);
+   stage.show(); 
+}
 
 }
