@@ -63,9 +63,17 @@ public class ListBookControllerv2 implements Initializable{
         window.setScene(welcomeScene);
         window.show();
     }
+     
+    
     @FXML
-    void switchToGUI(ActionEvent event) {
+    void switchToGUI(ActionEvent event)  throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
+        Parent welcomeParent = loader.load();
+        Scene welcomeScene = new Scene(welcomeParent);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(welcomeScene);
+        window.show();
     }
     public ObservableList<listbookVariable> getBooksList() throws SQLException {
         ObservableList<listbookVariable> bookList = FXCollections.observableArrayList();

@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="tableViewList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="703.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListBookControllerv2">
    <children>
-      <TableView fx:id="listPane" layoutX="85.0" prefHeight="543.0" prefWidth="645.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="-27.0" AnchorPane.topAnchor="0.0">
+      <TableView fx:id="listPane" layoutX="81.0" prefHeight="543.0" prefWidth="645.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="0.0">
          <columns>
             <TableColumn fx:id="idbook" minWidth="11.0" prefWidth="63.33334732055664" style="-fx-background-color: #ACB1D6;" text="ID" />
             <TableColumn fx:id="titlbook" prefWidth="88.66667938232422" style="-fx-background-color: #ACB1D6;" text="Title" />
