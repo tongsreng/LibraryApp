@@ -1,3 +1,4 @@
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,9 +12,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/AllDesign/GUI.fxml"));
         stage.setTitle("Welcome to Library App");
-        stage.setScene(new Scene(root, 500, 500));
+        stage.setScene(new Scene(root));
         stage.show();
     }
 }
