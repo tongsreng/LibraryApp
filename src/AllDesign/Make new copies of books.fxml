@@ -1,13 +1,57 @@
+@ -1,56 +0,0 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="887.0" style="-fx-background-color: sky;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fad0f7" height="74.0" layoutX="14.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="858.0" />
-      <Button layoutX="18.0" layoutY="14.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="846.0" text="Make New Copies of Books" />
+      <Button layoutX="7.0" layoutY="4.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="683.0" text="Welcome to Fantasy Books">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="9.0" layoutY="2.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="96.0" text="&lt;  Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="57.0" layoutX="7.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="683.0" />
+      <Text fill="WHITE" layoutX="16.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID" wrappingWidth="82.93670272827148">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="251.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     Book Title" wrappingWidth="138.1367301940918">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Author" wrappingWidth="138.1367301940918">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-001" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-002" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-003" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-004" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-005" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f-006" wrappingWidth="82.93670272827143" />
+      <Text layoutX="535.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AA" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Gunslinger" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Game of Thrones" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Fellowship of the Ring" wrappingWidth="155.73670578002918" />
+      <Text layoutX="275.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Hobbit" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Moon (Twilight)" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harry Potter" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BB" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CC" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DD" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EE" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FF" wrappingWidth="113.33672714233393" />
    </children>
 </AnchorPane>
