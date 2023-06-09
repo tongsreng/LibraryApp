@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox prefHeight="263.0" prefWidth="163.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Home" contentDisplay="TOP" mnemonicParsing="false" prefHeight="74.0" prefWidth="179.0" text="Home">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Books" contentDisplay="TOP" mnemonicParsing="false" prefHeight="74.0" prefWidth="179.0" text="Books">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Newborrowing" mnemonicParsing="false" prefHeight="74.0" prefWidth="179.0" text="New Borrow">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Newreturn" mnemonicParsing="false" prefHeight="74.0" prefWidth="179.0" text="New Return">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search" mnemonicParsing="false" onAction="#search" prefHeight="74.0" prefWidth="179.0" text="Search">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="due" text="Due">
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="bID" prefWidth="90.0" text="Borrower ID" />
+                        <TableColumn fx:id="Booksname" prefWidth="241.0" sortType="DESCENDING" text="Book name" />
+                        <TableColumn fx:id="dueedate" prefWidth="102.0" text="Due Date" />
+                        <TableColumn fx:id="sta" prefWidth="72.0" text="Status" />
+                        <TableColumn fx:id="phone" prefWidth="139.0" text="Phone number" />
+                    </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab fx:id="Overdue" text="returned">
+               <content>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="bID" prefWidth="90.0" sortType="DESCENDING" text="Borrower ID" />
+                      <TableColumn fx:id="Booksname" prefWidth="241.0" sortType="DESCENDING" text="Book name" />
+                        <TableColumn fx:id="duedate" prefWidth="102.0" text="Due Date" />
+                        <TableColumn fx:id="sta" prefWidth="72.0" text="Status" />
+                        <TableColumn fx:id="phone" prefWidth="139.0" text="Phone number" />
+                    </columns>
+                  </TableView>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
