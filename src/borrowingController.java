@@ -1,4 +1,4 @@
-package samples.db;
+
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -38,6 +38,11 @@ public class borrowingController {
     @FXML
     private TextField phone;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+    public void switchTo(ActionEvent event) throws IOException{
+}
 }
 
 
