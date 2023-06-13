@@ -38,11 +38,8 @@ public class borrowingController {
     @FXML
     private TextField phone;
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-    public void switchTo(ActionEvent event) throws IOException{
+    
 }
-}
+
 
 
