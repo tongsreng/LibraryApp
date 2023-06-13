@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="573.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="545.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBookController">
    <children>
       <Label fx:id="label_addBook" layoutX="196.0" layoutY="38.0" prefHeight="41.0" prefWidth="215.0" text="ADD BOOK" textFill="#8294c4">
          <font>
@@ -30,7 +30,7 @@
       <TextField fx:id="addAuthor" layoutX="280.0" layoutY="313.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book author" style="-fx-background-color: #DBDFEA;" />
       <TextField fx:id="addGenre" layoutX="280.0" layoutY="256.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Genre" style="-fx-background-color: #DBDFEA;" />
       <TextField fx:id="addTitle" layoutX="280.0" layoutY="201.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book title" style="-fx-background-color: #DBDFEA;" />
-      <TextField fx:id="addID" layoutX="280.0" layoutY="146.0" onAction="#switchToAddBook" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addID" layoutX="280.0" layoutY="146.0" onMouseClicked="#autoGenerate" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" style="-fx-background-color: #DBDFEA;" />
       <TextField fx:id="addQty" layoutX="280.0" layoutY="366.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of book" style="-fx-background-color: #DBDFEA;" />
       <Label layoutX="122.0" layoutY="263.0" text="Genre" textFill="#8294c4">
          <font>
@@ -68,7 +68,7 @@
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="addPub" layoutX="280.0" layoutY="425.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addPublish" layoutX="280.0" layoutY="425.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" style="-fx-background-color: #DBDFEA;" />
       <Button fx:id="BTN_AddBook" layoutX="362.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchToListbook" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Add" textFill="WHITE">
          <font>
             <Font name="Georgia" size="14.0" />
@@ -79,6 +79,6 @@
             <Font name="Georgia" size="14.0" />
          </font>
       </Button>
-      <DatePicker layoutX="280.0" layoutY="483.0" prefHeight="31.0" prefWidth="187.0" promptText="pickdate" />
+      <DatePicker fx:id="addDate" layoutX="280.0" layoutY="483.0" prefHeight="31.0" prefWidth="187.0" promptText="pickdate" />
    </children>
 </Pane>
