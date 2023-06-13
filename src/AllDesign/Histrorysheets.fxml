@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HistrorysheetsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.HistorysheetController">
    <right>
       <VBox prefHeight="263.0" prefWidth="163.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
          <children>
@@ -46,7 +46,7 @@
         <tabs>
           <Tab fx:id="due" text="Due">
                <content>
-                  <TableView prefHeight="200.0" prefWidth="200.0">
+                  <TableView prefHeight="511.0" prefWidth="587.0">
                     <columns>
                       <TableColumn fx:id="bID" prefWidth="90.0" text="Borrower ID" />
                         <TableColumn fx:id="Booksname" prefWidth="241.0" sortType="DESCENDING" text="Book name" />
@@ -70,6 +70,19 @@
                   </TableView>
                </content>
           </Tab>
+            <Tab fx:id="due1" text="Due">
+               <content>
+                  <TableView prefHeight="511.0" prefWidth="587.0">
+                     <columns>
+                        <TableColumn fx:id="bID1" prefWidth="90.0" text="Borrower ID" />
+                        <TableColumn fx:id="Booksname1" prefWidth="241.0" sortType="DESCENDING" text="Book name" />
+                        <TableColumn fx:id="dueedate1" prefWidth="102.0" text="Due Date" />
+                        <TableColumn fx:id="sta1" prefWidth="72.0" text="Status" />
+                        <TableColumn fx:id="phone1" prefWidth="139.0" text="Phone number" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
         </tabs>
       </TabPane>
    </center>
