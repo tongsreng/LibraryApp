@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="651.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="651.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
    <children>
       <Text fill="WHITE" layoutX="133.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
          <font>
@@ -24,16 +24,16 @@
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font></Text>
-      <Button layoutX="35.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Login" textFill="WHITE">
+      <Button layoutX="35.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4; -fx-cursor: hand;" text="Login" textFill="WHITE">
          <font>
             <Font name="Georgia" size="16.0" />
          </font></Button>
-      <ImageView fitHeight="465.0" fitWidth="307.0" layoutX="344.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="27.03369140625" AnchorPane.topAnchor="3.0">
+      <ImageView fitHeight="427.0" fitWidth="307.0" layoutX="344.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../../../S2/Website_class/HOK%20Tin/TP/book-purple.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="179.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToregisterStudent" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Register" textFill="WHITE">
+      <Button layoutX="179.0" layoutY="295.0" mnemonicParsing="false" onAction="#switchToregisterStudent" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #8294C4; -fx-cursor: hand;" text="Register" textFill="WHITE">
          <font>
             <Font name="Georgia" size="16.0" />
          </font></Button>

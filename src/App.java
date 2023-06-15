@@ -14,7 +14,7 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/AllDesign/GUI.fxml"));
         stage.setTitle("Welcome to Library App");
-        stage.setScene(new Scene(root));
+        stage.setScene(new Scene(root, 600, 410 ));
      
         stage.show();
     }

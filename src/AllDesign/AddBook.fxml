@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="545.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBookController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="562.0" style="-fx-background-color: white; -fx-border-color: #8294C4; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBookController">
    <children>
-      <Label fx:id="label_addBook" layoutX="196.0" layoutY="38.0" prefHeight="41.0" prefWidth="215.0" text="ADD BOOK" textFill="#8294c4">
+      <Label fx:id="label_addBook" layoutX="208.0" layoutY="29.0" prefHeight="41.0" prefWidth="143.0" text="ADD BOOK" textFill="#8294c4">
          <font>
-            <Font name="Georgia" size="36.0" />
+            <Font name="Georgia" size="24.0" />
          </font>
          <effect>
             <Lighting>
@@ -27,58 +27,58 @@
             </Lighting>
          </effect>
       </Label>
-      <TextField fx:id="addAuthor" layoutX="280.0" layoutY="313.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book author" style="-fx-background-color: #DBDFEA;" />
-      <TextField fx:id="addGenre" layoutX="280.0" layoutY="256.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Genre" style="-fx-background-color: #DBDFEA;" />
-      <TextField fx:id="addTitle" layoutX="280.0" layoutY="201.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book title" style="-fx-background-color: #DBDFEA;" />
-      <TextField fx:id="addID" layoutX="280.0" layoutY="146.0" onMouseClicked="#autoGenerate" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" style="-fx-background-color: #DBDFEA;" />
-      <TextField fx:id="addQty" layoutX="280.0" layoutY="366.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of book" style="-fx-background-color: #DBDFEA;" />
-      <Label layoutX="122.0" layoutY="263.0" text="Genre" textFill="#8294c4">
+      <TextField fx:id="addAuthor" layoutX="280.0" layoutY="273.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book author" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addGenre" layoutX="280.0" layoutY="216.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Genre" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addTitle" layoutX="280.0" layoutY="161.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book title" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addID" layoutX="280.0" layoutY="106.0" onMouseClicked="#autoGenerate" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" style="-fx-background-color: #DBDFEA;" />
+      <TextField fx:id="addQty" layoutX="280.0" layoutY="326.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of book" style="-fx-background-color: #DBDFEA;" />
+      <Label layoutX="122.0" layoutY="223.0" text="Genre" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="208.0" text="Title" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="168.0" text="Title" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="153.0" text="ID" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="113.0" text="ID" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
       <Label layoutX="93.0" layoutY="348.0" />
-      <Label layoutX="122.0" layoutY="319.0" text="Author" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="279.0" text="Author" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="432.0" text="Publish" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="392.0" text="Publish" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="373.0" text="QTY" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="333.0" text="QTY" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="122.0" layoutY="489.0" text="Imort Date" textFill="#8294c4">
+      <Label layoutX="122.0" layoutY="449.0" text="Imort Date" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="addPublish" layoutX="280.0" layoutY="425.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" style="-fx-background-color: #DBDFEA;" />
-      <Button fx:id="BTN_AddBook" layoutX="362.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchToListbook" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #8294C4;" text="Add" textFill="WHITE">
+      <TextField fx:id="addPublish" layoutX="280.0" layoutY="385.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" style="-fx-background-color: #DBDFEA;" />
+      <Button fx:id="BTN_AddBook" layoutX="362.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchToListbook" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #8294C4; -fx-cursor: hand;" text="Add" textFill="WHITE">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="BTN_back" layoutX="122.0" layoutY="566.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #434242;" text="Back" textFill="WHITE">
+      <Button fx:id="BTN_back" layoutX="122.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #434242; -fx-cursor: hand;" text="Back" textFill="WHITE">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Button>
-      <DatePicker fx:id="addDate" layoutX="280.0" layoutY="483.0" prefHeight="31.0" prefWidth="187.0" promptText="pickdate" />
+      <DatePicker fx:id="addDate" layoutX="280.0" layoutY="443.0" prefHeight="31.0" prefWidth="187.0" promptText="pickdate" />
    </children>
 </Pane>
