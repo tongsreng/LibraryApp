@@ -75,6 +75,8 @@ public class ListBookControllerv2 implements Initializable{
         window.setScene(welcomeScene);
         window.show();
     }
+
+// *******************************
     public ObservableList<listbookVariable> getBooksList() throws SQLException {
         ObservableList<listbookVariable> bookList = FXCollections.observableArrayList();
         try {

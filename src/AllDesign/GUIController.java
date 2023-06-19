@@ -42,6 +42,7 @@ public class GUIController {
     }
 
     public void switchToListbook(ActionEvent event) throws IOException {
+
         root = FXMLLoader.load(getClass().getResource("BOOK.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
