@@ -10,12 +10,20 @@ public class App extends Application {
         launch(args);
     }
 
+
     @Override
     public void start(Stage stage) throws Exception {
+        System.out.println("888888888888888888888888");
         Parent root = FXMLLoader.load(getClass().getResource("/AllDesign/GUI.fxml"));
+          System.out.println("8**********************************88");
         stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root, 600, 410 ));
      
         stage.show();
     }
 }
+
+
+     
+
+
