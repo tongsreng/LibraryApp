@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="tableViewList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="949.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.Books.BOOKv2Controller">
    <children>
-      <TableView fx:id="listPane" layoutX="254.0" layoutY="50.0" prefHeight="593.0" prefWidth="697.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="50.0">
+      <TableView fx:id="listPane" layoutX="254.0" layoutY="50.0" onMouseClicked="#selectItem" prefHeight="593.0" prefWidth="697.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="50.0">
          <columns>
             <TableColumn fx:id="idbook" minWidth="11.0" prefWidth="63.33334732055664" style="-fx-background-color: #ACB1D6;" text="ID" />
             <TableColumn fx:id="titlbook" prefWidth="88.66667938232422" style="-fx-background-color: #ACB1D6;" text="Title" />
@@ -38,7 +38,7 @@
          <effect>
             <DropShadow height="9.75" radius="4.4375" width="10.0" />
          </effect></Button>
-      <Button fx:id="updatebtn" layoutX="22.0" layoutY="653.0" mnemonicParsing="false" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Update book">
+      <Button fx:id="updatebtn" layoutX="22.0" layoutY="653.0" mnemonicParsing="false" onAction="#UpdateBookv2" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Update book">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

@@ -1,6 +1,6 @@
 package AllDesign.Books;
 public class listbookVariable {
-    private Integer ID;
+    private String ID;
     private String title;
     private String genre;
     private String author;
@@ -11,7 +11,7 @@ public class listbookVariable {
     public listbookVariable(){
         
     }
-    public listbookVariable(Integer ID, String title, String genre, String author, String qTY, String borrowing, String importDate,String publishDate) {
+    public listbookVariable(String ID, String title, String genre, String author, String qTY, String borrowing, String importDate,String publishDate) {
             
         this.ID = ID;
         this.title = title;
@@ -23,10 +23,10 @@ public class listbookVariable {
         this.importDate = importDate;
         
     }
-    public Integer getID() {
+    public String getID() {
         return ID;
     }
-    public void setID(Integer ID) {
+    public void setID(String ID) {
         this.ID = ID;
     }
     public String getTitle() {
