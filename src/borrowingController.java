@@ -1,5 +1,4 @@
 
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -7,18 +6,11 @@ import javafx.scene.control.TextField;
 
 public class borrowingController {
 
-
     @FXML
     private TextField Book_ID1;
 
     @FXML
-    private Button Books;
-
-    @FXML
-    private DatePicker Borrow_Date;
-
-    @FXML
-    private TextField Borrower_ID;
+    private DatePicker Borrowdate;
 
     @FXML
     private DatePicker Due_Date;
@@ -27,10 +19,10 @@ public class borrowingController {
     private TextField First_name;
 
     @FXML
-    private Button Home;
+    private TextField Last_name;
 
     @FXML
-    private TextField Last_name;
+    private TextField StudentID;
 
     @FXML
     private Button Submit;
@@ -38,8 +30,4 @@ public class borrowingController {
     @FXML
     private TextField phone;
 
-    
 }
-
-
-
