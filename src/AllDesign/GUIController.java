@@ -50,8 +50,8 @@ public class GUIController {
         stage.show();
     }
 
-    public void switchToregisterStudent(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("registSTD.fxml"));
+    public void switchToregisterAdmin(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("Register_Admin.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

@@ -65,7 +65,7 @@ public class RegisterController {
     void autoGenerate(MouseEvent event) throws SQLException {
         int id = 0;
         Connection conn = studentSqlConnect.getConnection();
-        String sql = "SELECT * FROM Student";
+        String sql = "SELECT * FROM Admin";
         PreparedStatement statement = conn.prepareStatement(sql);
         ResultSet rs = statement.executeQuery();
         while (rs.next()) {
@@ -124,7 +124,7 @@ public class RegisterController {
                     alert.setContentText("Insert success.");
                     alert.showAndWait();
 
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/StudentLists.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/AdminList.fxml"));
                     Parent welcomeParent = loader.load();
                     Scene welcomeScene = new Scene(welcomeParent);
                     Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
