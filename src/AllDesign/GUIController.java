@@ -58,8 +58,8 @@ public class GUIController {
         stage.show();
     }
 
-    public void switchToUpdate(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Update_book.fxml"));
+    public void switchToStdTable(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("StudentLists.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
