@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="683.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="borrowingController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="681.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
    <padding>
    </padding>
    <children>
@@ -22,7 +22,7 @@
       </Label>
       <Label layoutX="30.0" layoutY="103.0" prefHeight="18.0" prefWidth="59.0" text="Name: " />
       <TextField fx:id="First_name" layoutX="163.0" layoutY="100.0" promptText="FIrst name" />
-      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="683.0" style="-fx-background-color: clear;" />
+      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="683.0" style="-fx-background-color: #FFEAD2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <TextField fx:id="Last_name" layoutX="351.0" layoutY="100.0" promptText="Last name" />
       <Label layoutX="30.0" layoutY="164.0" prefHeight="18.0" prefWidth="80.0" text="Student ID:" />
       <TextField fx:id="StudentID" layoutX="163.0" layoutY="161.0" promptText="Student_ID" />

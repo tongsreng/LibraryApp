@@ -1,10 +1,9 @@
-
+package student;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,83 +13,79 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
-import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
-public class AddBookController {
+public class RegisterController {
 
     @FXML
-    private Button BTN_AddBook;
+    private DatePicker DOBpicker;
 
     @FXML
-    private Button BTN_back;
+    private Label labelRegis;
+
+    @FXML
+    private TextField putAdd;
+
+    @FXML
+    private TextField putCont;
+
+    @FXML
+    private TextField putDep;
+
+    @FXML
+    private TextField putEmauil;
+
+    @FXML
+    private TextField putGender;
+
+    @FXML
+    private TextField putID;
+
+    @FXML
+    private TextField putName;
+    
     
 
     @FXML
-    private TextField addAuthor;
-
-    @FXML
-    private DatePicker addDate;
-
-    @FXML
-    private TextField addGenre;
-
-    @FXML
-    private TextField addID;
-
-    @FXML
-    private TextField addPublish;
-
-    @FXML
-    private TextField addQty;
-
-    @FXML
-    private TextField addTitle;
-
-    @FXML
-    private Label label_addBook;
-
-    @FXML
-    void switchToGUI(ActionEvent event) throws IOException {
+    void switchToLogin(ActionEvent event) throws IOException {
         //System.out.println("THIS IS BACK BTN................");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/login.fxml"));
         Parent welcomeParent = loader.load();
         Scene welcomeScene = new Scene(welcomeParent);
-
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow(); 
         window.setScene(welcomeScene);
         window.show();
     }
-     
-
+//   copied from AddBookController.java
     @FXML
     void autoGenerate(MouseEvent event) throws SQLException {
         int id = 0;
-        Connection conn = bookDB.getConnection();
-        String sql = "SELECT * FROM Book";
+        Connection conn = studentSqlConnect.getConnection();
+        String sql = "SELECT * FROM Student";
         PreparedStatement statement = conn.prepareStatement(sql);
         ResultSet rs = statement.executeQuery();
         while (rs.next()) {
-            id = rs.getInt("ID") + 1;
+            id = rs.getInt("sid") + 1;
         }
         String convert = Integer.toString(id);
-        addID.setText(convert);
+        putID.setText(convert);
     }
-
     @FXML
-    void switchToListbook(ActionEvent event) throws IOException {
-        String title = addTitle.getText();
-        String genre = addGenre.getText();
-        String author = addAuthor.getText();
-        String qty = addQty.getText();
-        String publish = addPublish.getText();
-        String date;
-        if(addDate.getValue() != null){
-            date = addDate.getValue().toString();
+    void switchToStudentList(ActionEvent event) throws IOException{   // Register btn
+        String stname = putName.getText();
+        String gender = putGender.getText();
+        String stid = putID.getText();
+         String department = putDep.getText();
+        String address = putAdd.getText();
+        String contact = putCont.getText();   
+        String email = putEmauil.getText();
+        String dateOfBirth;
+        if(DOBpicker.getValue() != null){
+            dateOfBirth = DOBpicker.getValue().toString();
         }else{
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("Fail");
@@ -99,45 +94,48 @@ public class AddBookController {
             alert.showAndWait();
             return;
         }
-        System.out.println("kfdskfj f=d=fdf=="+title+ " ====fdksfjsdkfksdf");
-        if (title.equals("") ||  genre.equals("") || genre.equals("") || author.equals("")|| qty.equals("") || publish.equals("") ) {
+
+
+        if (stname.equals("") ||  gender.equals("") || stid.equals("") ||department.equals("") || address.equals("")|| contact.equals("") || email.equals("") ) {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("Fail");
             alert.setHeaderText(null);
             alert.setContentText("Please input all fields!!");
             alert.showAndWait();
         } else {
-            try (Connection conn = bookDB.getConnection()) {
-                String sqlInsert = "INSERT INTO `Book`(`Title`, `Genre`, `Author`, `PublishDate`, `ImportDate` ,`QTY`) VALUES (?,?,?,?,?,?)";
+            try (Connection conn = studentSqlConnect.getConnection()) {
+                String sqlInsert = "INSERT INTO `Student`(`sid`, `sname`, `department`,`sgender` , `DOB`,`Address`,`Email`,`Contact`) VALUES (?,?,?,?,?,?,?,?)";
                 PreparedStatement statement = conn.prepareStatement(sqlInsert);
-                statement.setString(1, title);
-                statement.setString(2, genre);
-                statement.setString(3, author);
-                statement.setString(4, publish);
-                statement.setString(5, date);
-                statement.setString(6, qty);
+                statement.setString(1, stid);
+                statement.setString(2, stname);
+                statement.setString(3, department);
+                statement.setString(4, gender);
+                statement.setString(5, dateOfBirth);
+                statement.setString(6, address);
+                statement.setString(7, email);
+                statement.setString(8, contact);                 
+                
 
                 int rowsInserted = statement.executeUpdate();
                 if (rowsInserted > 0) {
                     Alert alert = new Alert(AlertType.INFORMATION);
-                    alert.setTitle("DONE!! ");
+                    alert.setTitle("** Saved ** ");
                     alert.setHeaderText(null);
                     alert.setContentText("Insert success.");
                     alert.showAndWait();
 
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/BOOK.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/StudentLists.fxml"));
                     Parent welcomeParent = loader.load();
                     Scene welcomeScene = new Scene(welcomeParent);
-
                     Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     window.setScene(welcomeScene);
                     window.show();
 
                 } else {
                     Alert alert = new Alert(AlertType.WARNING);
-                    alert.setTitle("Fail");
+                    alert.setTitle("!! Fail !!");
                     alert.setHeaderText(null);
-                    alert.setContentText("Fail insert!!");
+                    alert.setContentText("Fail insert!!  (1)");
                     alert.showAndWait();
                 }
 
@@ -146,10 +144,10 @@ public class AddBookController {
                 Alert alert = new Alert(AlertType.WARNING);
                 alert.setTitle("Fail");
                 alert.setHeaderText(null);
-                alert.setContentText("Fail insert!!");
+                alert.setContentText("Fail insert ");
                 alert.showAndWait();
             }
         }
     }
-
 }
+

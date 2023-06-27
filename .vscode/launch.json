@@ -6,7 +6,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "App",
+            "name": "bookDB",
             "request": "launch",
             "mainClass": "App",
             "projectName": "LibraryApp_c3e826ee",

@@ -1,3 +1,4 @@
+package AllDesign.Books;
 public class listbookVariable {
     private String ID;
     private String title;
@@ -5,16 +6,22 @@ public class listbookVariable {
     private String author;
     private String publishDate;
     private String importDate;
-    private String QTY;
-    public listbookVariable(String ID, String title, String genre, String author, String publishDate,
-            String importDate, String qTY) {
+    private String QTY,borrowing;
+
+    public listbookVariable(){
+        
+    }
+    public listbookVariable(String ID, String title, String genre, String author, String qTY, String borrowing, String importDate,String publishDate) {
+            
         this.ID = ID;
         this.title = title;
         this.genre = genre;
         this.author = author;
+        QTY = qTY;
+        this.borrowing = borrowing;
         this.publishDate = publishDate;
         this.importDate = importDate;
-        QTY = qTY;
+        
     }
     public String getID() {
         return ID;
@@ -57,5 +64,11 @@ public class listbookVariable {
     }
     public void setQTY(String qTY) {
         QTY = qTY;
-    }   
+    } 
+     public String getBorrowing() {
+        return borrowing;
+    }
+    public void setBorrowing(String borrowing) {
+        this.borrowing = borrowing;
+    }  
 }
