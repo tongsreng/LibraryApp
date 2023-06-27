@@ -70,12 +70,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class ResgistAdminController {
 
-    @FXML
+   @FXML
     private DatePicker DOBpicker;
 
     @FXML
@@ -85,10 +86,10 @@ public class ResgistAdminController {
     private TextField putAdd;
 
     @FXML
-    private TextField putAdd1;
+    private PasswordField putAdd1;
 
     @FXML
-    private TextField putAdd2;
+    private PasswordField putAdd2;
 
     @FXML
     private TextField putCont;
@@ -117,18 +118,9 @@ public class ResgistAdminController {
         window.setScene(welcomeScene);
         window.show();
     }
-    //  @FXML
-    // void switchTogui(ActionEvent event) throws IOException {
-    //     FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
-    //     Parent welcomeParent = loader.load();
-    //     Scene welcomeScene = new Scene(welcomeParent);
-    //     Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow(); 
-    //     window.setScene(welcomeScene);
-    //     window.show();
-    // }
     
     @FXML
-    void switchTogui(ActionEvent event) throws IOException {
+    void switchToHome(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
         Parent welcomeParent = loader.load();
         Scene welcomeScene = new Scene(welcomeParent);

@@ -297,11 +297,10 @@ public class BOOKv2Controller implements Initializable{
         String Bvalue4 = addAuthor.getText();
         String Bvalue5 = addQty.getText();
         String Bvalue6 = txtborrow.getText();
-        String Bvalue7 = addPublish.getText();
-        String Bvalue8 = addDate.getValue().toString();
+        String Bvalue7 = addDate.getValue().toString();
+        String Bvalue8 = addPublish.getText();
 
-        String sql = "Update Bookv2 set bid = ' "+Bvalue1+"',btitle= '"+Bvalue2+"', bgenre ='" + Bvalue3+"', bAuthor='" + Bvalue4+"', bQTY='" + Bvalue5+"', borrowing='" + Bvalue6+"', import='" + Bvalue7+"', publish='" + Bvalue8+"'";
-        
+        String sql = "update Bookv2 set bid='"+Bvalue1+"', btitle='"+Bvalue2+"',bgenre='"+Bvalue3+"',bAuthor='"+Bvalue4+"',bQTY='"+Bvalue5+"',borrowing='"+Bvalue6+"',import='"+Bvalue7+"',publish='"+Bvalue8+"' where bid = '"+Bvalue1+"'";
         pst = conn.prepareStatement(sql);
         pst.execute();
         JOptionPane.showMessageDialog(null,"Up to date.");

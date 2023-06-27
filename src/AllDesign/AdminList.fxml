@@ -6,17 +6,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.studntTableController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.AdminTableController">
    <children>
       <AnchorPane prefHeight="410.0" prefWidth="120.0" style="-fx-background-color: #DBDFEA;">
          <children>
-            <Button fx:id="regisSTDmore" layoutX="9.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchTOregisSTD" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Add Student" />
-            <Button fx:id="btn_home" layoutX="9.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Home" />
+            <Button fx:id="regisSTDmore" layoutX="9.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToRegistAdmin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Add Admin" />
+            <Button fx:id="btn_home" layoutX="9.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Home" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="519.0">
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="685.0">
          <children>
-            <TableView fx:id="listView" prefHeight="410.0" prefWidth="669.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="listView" layoutX="-9.0" layoutY="-1.0" prefHeight="410.0" prefWidth="681.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <columns>
                 <TableColumn fx:id="idCol" maxWidth="100.0" prefWidth="50.666656494140625" style="-fx-background-color: #ACB1D6;" text="ID" />
                 <TableColumn fx:id="snameCol" prefWidth="63.99999749660492" style="-fx-background-color: #ACB1D6;" text="Name" />

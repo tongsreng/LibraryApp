@@ -124,7 +124,7 @@ public class RegisterController {
                     alert.setContentText("Insert success.");
                     alert.showAndWait();
 
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/AdminList.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/StudentLists.fxml"));
                     Parent welcomeParent = loader.load();
                     Scene welcomeScene = new Scene(welcomeParent);
                     Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
