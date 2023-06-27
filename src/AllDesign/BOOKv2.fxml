@@ -20,8 +20,8 @@
             <TableColumn fx:id="author" prefWidth="97.3333740234375" style="-fx-background-color: #ACB1D6;" text="Author" />
             <TableColumn fx:id="qty" prefWidth="86.6666259765625" style="-fx-background-color: #ACB1D6;" text="QTY" />
             <TableColumn fx:id="borrowing" prefWidth="92.0" style="-fx-background-color: #ACB1D6;" text="Borrowing" />
-            <TableColumn fx:id="publish" prefWidth="83.3333740234375" style="-fx-background-color: #ACB1D6;" text="Publish" />
             <TableColumn fx:id="ImportDate" prefWidth="100.6666259765625" style="-fx-background-color: #ACB1D6;" text="Import Date" />
+            <TableColumn fx:id="publish" prefWidth="83.3333740234375" style="-fx-background-color: #ACB1D6;" text="Publish" />
          </columns>
       </TableView>
       <Button fx:id="backBTN" layoutX="137.0" layoutY="653.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #FFEAD2; -fx-border-color: #FFEAD2; -fx-cursor: hand;" text="Back">

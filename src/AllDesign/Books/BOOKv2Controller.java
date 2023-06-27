@@ -108,16 +108,7 @@ public class BOOKv2Controller implements Initializable{
 
     @FXML
     private Button updatebtn;
-   @FXML
-    void switchToHome(ActionEvent event) throws IOException {
-        System.out.println("fdsfjkdsfjdfk");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
-        Parent welcomeParent = loader.load();
-        Scene welcomeScene = new Scene(welcomeParent);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(welcomeScene);
-        window.show();
-    }
+
     @FXML
     void autoGenerate(MouseEvent event) throws SQLException {
          int id = 0;
@@ -256,8 +247,8 @@ public class BOOKv2Controller implements Initializable{
                     rs.getString("bAuthor"),
                     rs.getString("borrowing"),
                     rs.getString("bQTY"),
-                    rs.getString("publish"),
-                    rs.getString("import")
+                    rs.getString("import"),
+                    rs.getString("publish")
                 ));
                 listPane.setItems(booklist); 
                     
@@ -300,7 +291,6 @@ public class BOOKv2Controller implements Initializable{
     @FXML
     void UpdateBookv2(ActionEvent event) throws IOException, SQLException {
         conn = bookDB.getConnection();
-     
         String Bvalue1 = addID.getText();
         String Bvalue2 = addTitle.getText();
         String Bvalue3 = addGenre.getText();
@@ -309,15 +299,26 @@ public class BOOKv2Controller implements Initializable{
         String Bvalue6 = txtborrow.getText();
         String Bvalue7 = addPublish.getText();
         String Bvalue8 = addDate.getValue().toString();
-        String sql = "update Bookv2 set bid='"+Bvalue1+"', btitle='"+Bvalue2+"',bgenre='"+Bvalue3+"',bAuthor='"+Bvalue4+"',bQTY='"+Bvalue5+"',borrowing='"+Bvalue6+"',publish='"+Bvalue7+"',import='"+Bvalue8+"' where bid = '"+Bvalue1+"'";
+
+        String sql = "Update Bookv2 set bid = ' "+Bvalue1+"',btitle= '"+Bvalue2+"', bgenre ='" + Bvalue3+"', bAuthor='" + Bvalue4+"', bQTY='" + Bvalue5+"', borrowing='" + Bvalue6+"', import='" + Bvalue7+"', publish='" + Bvalue8+"'";
+        
         pst = conn.prepareStatement(sql);
         pst.execute();
-        JOptionPane.showMessageDialog(null,"Updated!.");
+        JOptionPane.showMessageDialog(null,"Up to date.");
         refreshTable();
         showBook();
     }
 
-
+    @FXML
+    void switchToHome(ActionEvent event) throws IOException {
+        System.out.println("fdsfjkdsfjdfk");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/GUI.fxml"));
+        Parent welcomeParent = loader.load();
+        Scene welcomeScene = new Scene(welcomeParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(welcomeScene);
+        window.show();
+    }
 //------------------------------ Connect sqlite to TableView    -----------------------------
     ObservableList<listbookVariable> booklist = FXCollections.observableArrayList();
     public ObservableList<listbookVariable> getBooksList() throws SQLException{

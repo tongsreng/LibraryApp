@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.studntTableController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.studntTableController">
    <children>
       <AnchorPane prefHeight="410.0" prefWidth="120.0" style="-fx-background-color: #DBDFEA;">
          <children>
@@ -16,7 +16,7 @@
       </AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="519.0">
          <children>
-            <TableView fx:id="listView" prefHeight="410.0" prefWidth="517.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TableView fx:id="listView" prefHeight="410.0" prefWidth="669.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="0.0">
               <columns>
                 <TableColumn fx:id="idCol" maxWidth="100.0" prefWidth="50.666656494140625" style="-fx-background-color: #ACB1D6;" text="ID" />
                 <TableColumn fx:id="snameCol" prefWidth="63.99999749660492" style="-fx-background-color: #ACB1D6;" text="Name" />
@@ -25,7 +25,9 @@
                   <TableColumn fx:id="contCol" prefWidth="76.6666259765625" style="-fx-background-color: #ACB1D6;" text="Contact" />
                   <TableColumn fx:id="adrsCol" prefWidth="62.0" style="-fx-background-color: #ACB1D6;" text="Address" />
                   <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="65.333251953125" style="-fx-background-color: #ACB1D6;" text="Email" />
-                  <TableColumn fx:id="dobCol" maxWidth="300.0" minWidth="100.0" prefWidth="100.0" style="-fx-background-color: #ACB1D6;" text="DOB" />
+                  <TableColumn fx:id="dobCol" maxWidth="300.0" minWidth="68.00006103515625" prefWidth="68.00006103515625" style="-fx-background-color: #ACB1D6;" text="DOB" />
+                  <TableColumn prefWidth="75.0" style="-fx-background-color: #ACB1D6;" text="Password" />
+                  <TableColumn prefWidth="75.0" style="-fx-background-color: #ACB1D6;" text="Repassword" />
               </columns>
             </TableView>
          </children>
