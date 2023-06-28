@@ -52,4 +52,13 @@ public class borrowingController {
     
 
 }
+    @FXML
+    void switchToBorrow(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/borrowing.fxml"));
+        Parent welcomeParent = loader.load();
+        Scene welcomeScene = new Scene(welcomeParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow(); 
+        window.setScene(welcomeScene);
+        window.show();
+    }
 }

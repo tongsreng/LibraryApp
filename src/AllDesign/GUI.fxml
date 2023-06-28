@@ -16,7 +16,7 @@
             <Button layoutX="29.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToManageBook" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Manage books categories" />
             <Button layoutX="352.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToCopyofBook" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Make new copies of books" />
             <Button layoutX="29.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToHistoryBook" prefHeight="25.0" prefWidth="203.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Borrow /Return Record" />
-            <Button layoutX="352.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToBorrowRecord" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Register New Borrowing books" />
+            <Button layoutX="352.0" layoutY="237.0" mnemonicParsing="false" onAction="#switchToBorrow" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Register New Borrowing books" />
             <Text layoutX="219.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library App">
                <font>
                   <Font name="Georgia" size="29.0" />

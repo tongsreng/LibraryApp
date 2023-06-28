@@ -114,7 +114,7 @@ public class GUIController {
         window.show();
     }
 
-    public void switchToBorrowRecord(ActionEvent event) throws IOException {
+    public void switchToBorrow(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("borrowing.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
