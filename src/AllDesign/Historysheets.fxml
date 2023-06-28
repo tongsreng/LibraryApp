@@ -12,7 +12,7 @@
    <bottom>
       <VBox prefHeight="22.0" prefWidth="1068.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="back" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#tabBorww" prefHeight="59.0" prefWidth="116.0" text="Back" />
+            <Button fx:id="back" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="59.0" prefWidth="116.0" text="Back" />
          </children>
       </VBox>
    </bottom>

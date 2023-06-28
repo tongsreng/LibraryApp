@@ -14,6 +14,9 @@ import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 
 public class HistoryController {
+    private Stage stage;
+    private Scene scene;
+   
 
     @FXML
     private TableColumn<?, ?> BookID;
@@ -78,13 +81,13 @@ public class HistoryController {
     private Parent root;
 
     @FXML
-    void tabBorww(ActionEvent event) throws IOException {
+
+    public void switchToGUI(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
     }
-
 }
-
