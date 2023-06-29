@@ -65,7 +65,7 @@ public class RegisterController {
     void autoGenerate(MouseEvent event) throws SQLException {
         int id = 0;
         Connection conn = studentSqlConnect.getConnection();
-        String sql = "SELECT * FROM Admin";
+        String sql = "SELECT * FROM Student";
         PreparedStatement statement = conn.prepareStatement(sql);
         ResultSet rs = statement.executeQuery();
         while (rs.next()) {
