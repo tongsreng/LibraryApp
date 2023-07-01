@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -10,9 +9,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="681.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="683.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.borrowingController">
    <padding>
-      <Insets top="1.0" />
    </padding>
    <children>
       <Separator focusTraversable="false" layoutX="-7.0" layoutY="75.0" prefHeight="3.0" prefWidth="23.0" />
@@ -24,26 +22,19 @@
       </Label>
       <Label layoutX="30.0" layoutY="103.0" prefHeight="18.0" prefWidth="59.0" text="Name: " />
       <TextField fx:id="First_name" layoutX="163.0" layoutY="100.0" promptText="FIrst name" />
-      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="683.0" style="-fx-background-color: #FFEAD2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="683.0" style="-fx-background-color: clear;" />
       <TextField fx:id="Last_name" layoutX="351.0" layoutY="100.0" promptText="Last name" />
-      <Label layoutX="30.0" layoutY="164.0" prefHeight="18.0" prefWidth="80.0" text="Borrower ID:" />
-      <Button fx:id="Home" layoutX="4.0" layoutY="4.0" minHeight="18.0" minWidth="51.0" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="33.0" prefWidth="53.0" style="-fx-background-color: #ACB1D6; -fx-border-color: gray; -fx-cursor: hand;" text="Home" textFill="#050704" />
-      <Button fx:id="Books" layoutX="60.0" layoutY="4.0" minHeight="18.0" minWidth="51.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="51.0" style="-fx-background-color: #ACB1D6; -fx-border-color: gray; -fx-cursor: hand;" text="Books" textFill="#050704" />
-      <TextField fx:id="Borrower_ID" layoutX="163.0" layoutY="161.0" promptText="ID" />
-      <TextField fx:id="Book_ID" layoutX="163.0" layoutY="227.0" promptText="ID" />
-      <Label layoutX="30.0" layoutY="231.0" text="Book ID: " />
-      <Label layoutX="31.0" layoutY="291.0" prefHeight="18.0" prefWidth="80.0" text="Borrow Date:" />
-      <DatePicker fx:id="Borrow_Date" layoutX="161.0" layoutY="287.0" prefHeight="26.0" prefWidth="152.0" promptText="MM/DD/YYYY" style="-fx-background-insets: gray;" />
-      <DatePicker fx:id="Due_Date" layoutX="404.0" layoutY="287.0" promptText="MM/DD/YYYY" />
-      <Label layoutX="351.0" layoutY="291.0" prefHeight="18.0" prefWidth="53.0" text="Due to:" />
-      <Button fx:id="Submit" layoutX="402.0" layoutY="362.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Done" textFill="#281717">
-         <font>
-            <Font size="13.0" />
-         </font></Button>
-      <Button fx:id="btn_brwMore" layoutX="217.0" layoutY="362.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Borrow more" textFill="#281717">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Button>
+      <Label layoutX="30.0" layoutY="164.0" prefHeight="18.0" prefWidth="80.0" text="Student ID:" />
+      <TextField fx:id="StudentID" layoutX="163.0" layoutY="161.0" promptText="Student_ID" />
+      <TextField fx:id="phone" layoutX="163.0" layoutY="226.0" promptText="Borrower phone number" />
+      <Label layoutX="30.0" layoutY="230.0" prefHeight="17.0" prefWidth="88.0" text="Phone number:" />
+      <Label layoutX="31.0" layoutY="339.0" prefHeight="18.0" prefWidth="80.0" text="Borrow Date:" />
+      <DatePicker fx:id="Due_Date" layoutX="404.0" layoutY="334.0" promptText="MM/DD/YYYY" />
+      <Label layoutX="351.0" layoutY="338.0" prefHeight="18.0" prefWidth="53.0" text="Due to:" />
+      <Button fx:id="Submit" layoutX="280.0" layoutY="383.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: #9376E0; -fx-border-radius: 50; -fx-background-radius: 50;" text="Borrow" textFill="#281717" />
+      <Label layoutX="30.0" layoutY="287.0" text="Book ID: " />
+      <TextField fx:id="Book_ID1" layoutX="163.0" layoutY="283.0" promptText="ID" />
+      <Button layoutX="9.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchToGUI" text="Home" />
+      <DatePicker fx:id="Borrowdate" layoutX="163.0" layoutY="336.0" promptText="MM/YY/YYYY" />
    </children>
 </AnchorPane>

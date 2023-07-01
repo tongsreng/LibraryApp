@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
@@ -10,9 +11,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.ResgistAdminController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" style="-fx-border-color: #ACB1D6; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.ResgistAdminController">
    <children>
-      <Label fx:id="labelRegis" layoutX="96.0" layoutY="16.0" prefHeight="41.0" prefWidth="314.0" text="Register Admin" textFill="#688deb">
+      <Label fx:id="labelRegis" layoutX="108.0" layoutY="11.0" prefHeight="41.0" prefWidth="314.0" style="-fx-border-image-width: 10;" text="Register Admin" textFill="#688deb">
          <font>
             <Font name="Georgia" size="34.0" />
          </font>
@@ -27,75 +28,75 @@
             </Lighting>
          </effect>
       </Label>
-      <Label layoutX="38.0" layoutY="108.0" text="Student Name" textFill="#8294c4">
+      <Label layoutX="38.0" layoutY="77.0" text="Admin Name" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="290.0" layoutY="108.0" text="ID" textFill="#8294c4">
+      <Label layoutX="290.0" layoutY="77.0" text="ID" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="38.0" layoutY="179.0" text="Gender" textFill="#8294c4">
+      <Label layoutX="38.0" layoutY="141.0" text="Gender" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="289.0" layoutY="174.0" text="Department" textFill="#8294c4">
+      <Label layoutX="289.0" layoutY="141.0" text="Department" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putName" layoutX="37.0" layoutY="129.0" />
-      <TextField fx:id="putID" layoutX="289.0" layoutY="129.0" />
-      <TextField fx:id="putDep" layoutX="287.0" layoutY="195.0" />
-      <TextField fx:id="putGender" layoutX="37.0" layoutY="195.0" />
-      <Label layoutX="37.0" layoutY="243.0" text="DOB" textFill="#8294c4">
+      <TextField fx:id="putName" layoutX="37.0" layoutY="98.0" />
+      <TextField fx:id="putID" layoutX="289.0" layoutY="98.0" />
+      <TextField fx:id="putDep" layoutX="287.0" layoutY="158.0" promptText="ex: GIC" />
+      <TextField fx:id="putGender" layoutX="37.0" layoutY="158.0" promptText="F / M" />
+      <Label layoutX="37.0" layoutY="201.0" text="DOB" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="287.0" layoutY="310.0" text="Password" textFill="#8294c4">
+      <Label layoutX="287.0" layoutY="255.0" text="Password" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="288.0" layoutY="239.0" text="Social Account" textFill="#8294c4">
+      <Label layoutX="288.0" layoutY="201.0" text="Social Account" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="308.0" text="Address" textFill="#8294c4">
+      <Label layoutX="36.0" layoutY="253.0" text="Address" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putEmauil" layoutX="286.0" layoutY="259.0" promptText="itc_gic_i3@gamail.com" />
-      <TextField fx:id="putAdd" layoutX="36.0" layoutY="328.0" />
-      <TextField fx:id="putCont" layoutX="36.0" layoutY="387.0" />
-      <Button layoutX="42.0" layoutY="439.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Back">
+      <TextField fx:id="putEmauil" layoutX="286.0" layoutY="218.0" promptText="itc_gic_i3@gamail.com" />
+      <TextField fx:id="putAdd" layoutX="36.0" layoutY="273.0" promptText="Address Now" />
+      <TextField fx:id="putCont" layoutX="36.0" layoutY="338.0" />
+      <Button layoutX="77.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Back">
          <font>
             <Font name="Georgia" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="360.0" layoutY="437.0" mnemonicParsing="false" onAction="#switchTogui" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Register" textFill="#2f3667">
+      <Button layoutX="285.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Register" textFill="#2f3667">
          <font>
             <Font name="Georgia" size="12.0" />
          </font>
       </Button>
-      <DatePicker fx:id="DOBpicker" layoutX="37.0" layoutY="261.0" prefHeight="25.0" prefWidth="149.0" />
-      <Label layoutX="37.0" layoutY="362.0" text="Contact" textFill="#8294c4">
+      <DatePicker fx:id="DOBpicker" layoutX="37.0" layoutY="218.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="37.0" layoutY="315.0" text="Contact" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putAdd1" layoutX="285.0" layoutY="328.0" />
-      <TextField fx:id="putAdd2" layoutX="285.0" layoutY="387.0" />
-      <Label layoutX="287.0" layoutY="362.0" text="Repassword" textFill="#8294c4">
+      <Label layoutX="287.0" layoutY="315.0" text="Repassword" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
+      <PasswordField fx:id="putAdd1" layoutX="288.0" layoutY="273.0" />
+      <PasswordField fx:id="putAdd2" layoutX="286.0" layoutY="338.0" />
    </children>
 </Pane>
