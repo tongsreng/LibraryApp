@@ -13,7 +13,6 @@ public class GUIController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    
 
     public void switchToGUI(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
@@ -33,8 +32,8 @@ public class GUIController {
 
     }
 
-    public void switchToManageBook(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Manage Book's Categories.fxml"));
+    public void switchToManageCategory(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/AllDesign/Category/BookCategory.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -50,6 +49,7 @@ public class GUIController {
         stage.setScene(scene);
         stage.show();
     }
+
     public void switchToregisterAdmin(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("Register_Admin.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -57,15 +57,16 @@ public class GUIController {
         stage.setScene(scene);
         stage.show();
     }
- 
-     public void switchToregisterGUIAdmin(ActionEvent event) throws IOException {
+
+    public void switchToregisterGUIAdmin(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("AdminList.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
-     public void switchToregisterSTD(ActionEvent event) throws IOException {
+
+    public void switchToregisterSTD(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("registST.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);

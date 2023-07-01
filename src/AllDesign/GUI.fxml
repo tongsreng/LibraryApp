@@ -17,7 +17,7 @@
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button layoutX="29.0" layoutY="149.0" mnemonicParsing="false" onAction="#switchToManageBook" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Manage books categories" textFill="#1877f2">
+            <Button layoutX="29.0" layoutY="149.0" mnemonicParsing="false" onAction="#switchToManageCategory" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand;" text="Manage books categories" textFill="#1877f2">
                <font>
                   <Font size="14.0" />
                </font></Button>
