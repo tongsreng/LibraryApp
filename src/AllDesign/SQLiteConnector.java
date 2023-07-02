@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class SQLiteConnector {
     public static Connection getSQLiteConnection() throws ClassNotFoundException, SQLException {
-        String databasePath = "D:/Introduction/LibraryApp/DBadmin.db";
+        String databasePath = "C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/DBadmin.db";
         Class.forName("org.sqlite.JDBC");
 
         // Define the SQLite database URL

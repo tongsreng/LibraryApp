@@ -31,7 +31,7 @@ import java.sql.SQLException;
 
 public class studentSqlConnect {
     public static Connection getConnection() throws SQLException{
-       String Url = "jdbc:sqlite:/D:/ITC/I3/SreypichTO/LibraryApp/DBstudent.db";
+       String Url = "jdbc:sqlite:/C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/DBstudent.db";
         Connection connection = DriverManager.getConnection(Url) ;
         return connection ;
     }

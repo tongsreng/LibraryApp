@@ -94,7 +94,7 @@ public class AdminTableController implements Initializable{
             ResultSet rs = statement.executeQuery();
             AdminVariable Admin;
             while(rs.next()){
-                Admin = new AdminVariable(rs.getString("id"),rs.getString("name"),rs.getString("gender"),rs.getString("department"),rs.getString(" contact")
+                Admin = new AdminVariable(rs.getString("id"),rs.getString("name"),rs.getString("gender"),rs.getString("department"),rs.getString("contact")
                 , rs.getString("address"), rs.getString("email"), rs.getString("dob")
                 , rs.getString("password"), rs.getString("repassword"));
               AdminList.add(Admin);

@@ -1,113 +1,119 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        
-        {
-            "type": "java",
-            "name": "SQLiteConnector",
-            "request": "launch",
-            "mainClass": "AllDesign.SQLiteConnector",
-            "projectName": "LibraryApp_53fb19e2",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_53fb19e2",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "bookDB",
-            "request": "launch",
-            "mainClass": "AllDesign.Books.bookDB",
-            "projectName": "LibraryApp_c3cbe694",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_b61fe4f0",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_c3cbe694",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_b64fd3b9",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "Application.App",
-            "projectName": "LibraryApp_b64fd3b9",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "Application.App",
-            "projectName": "LibraryApp_cfd186b8",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_cfd186b8",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_c9ee5b8d",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "DatabaseConnection",
-            "request": "launch",
-            "mainClass": "config.DatabaseConnection",
-            "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "LibraryApp_2ac5920",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path \"D:/IPE/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryApp_eacc270c",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_eacc270c",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryApp_6ea90a36",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "bookDB",
+      "request": "launch",
+      "mainClass": "AllDesign.Books.bookDB",
+      "projectName": "LibraryAppryApp_c3cbe694",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_b61fe4f0",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_c3cbe694",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_b64fd3b9",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "Application.App",
+      "projectName": "LibraryAppryApp_b64fd3b9",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "Application.App",
+      "projectName": "LibraryAppryApp_cfd186b8",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_cfd186b8",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_c9ee5b8d",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "DatabaseConnection",
+      "request": "launch",
+      "mainClass": "config.DatabaseConnection",
+      "projectName": "LibraryAppryApp_2ac5920",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "LibraryAppryApp_2ac5920",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "vmArgs": "--module-path \"C:/Users/Techo/OneDrive/Documents/Coding/GIC/LibraryApp/lib/javafx-sdk-20/lib\" --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
 }
