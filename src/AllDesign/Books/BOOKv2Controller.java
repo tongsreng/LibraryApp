@@ -14,6 +14,7 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javax.swing.JOptionPane;
+import javax.xml.validation.Validator;
 
 import javafx.beans.Observable;
 import javafx.collections.FXCollections;
@@ -29,6 +30,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -42,6 +44,13 @@ import javafx.stage.Window;
 
 
 public class BOOKv2Controller implements Initializable{
+     @FXML
+    private Label idtxtxError;
+    @FXML
+    private Label titletxtxError;
+
+    @FXML
+    private Label GenretxtError;
 
     @FXML
     private Button AddBookBtn;
@@ -125,81 +134,87 @@ public class BOOKv2Controller implements Initializable{
 
     @FXML
     void handleAddBK(ActionEvent event) throws IOException, SQLException {
-        String title = addTitle.getText();
-        String type = addGenre.getText();
-        String author = addAuthor.getText();
-        String qty = addQty.getText();
-        String borrowing = txtborrow.getText();
-        String publish = addPublish.getText();
-        String date;
-         if(addDate.getValue() != null){
-            date = addDate.getValue().toString();
-        }else{
-            Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Fail");
-            alert.setHeaderText(null);
-            alert.setContentText("Please input all fields!!!!!");
-            alert.showAndWait();
-            return;
-        }
+        boolean isIDEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addID,idtxtxError, "BookID is requires!!");
+        boolean istitleEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addTitle,titletxtxError, "Title is requires!!");
+        boolean isGenreEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addGenre,GenretxtError, "BookType is requires!!");
+        if(isIDEmpty || istitleEmpty ||isGenreEmpty){
+                String title = addTitle.getText();
+                String type = addGenre.getText();
+                String author = addAuthor.getText();
+                String qty = addQty.getText();
+                String borrowing = txtborrow.getText();
+                String publish = addPublish.getText();
+                String date;
+                if(addDate.getValue() != null){
+                    date = addDate.getValue().toString();
+                }else{
+                    Alert alert = new Alert(AlertType.WARNING);
+                    alert.setTitle("Fail");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Please input all fields!!!!!");
+                    alert.showAndWait();
+                    return;
+                }
 
-        if(addDate.getValue() != null){
-            date = addDate.getValue().toString();
-        }else{
-            Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Fail!!!");
-            alert.setHeaderText(null);
-            alert.setContentText("Please input all field.");
-            alert.showAndWait();
-            return;
-        }
+                if(addDate.getValue() != null){
+                    date = addDate.getValue().toString();
+                }else{
+                    Alert alert = new Alert(AlertType.WARNING);
+                    alert.setTitle("Fail!!!");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Please input all field.");
+                    alert.showAndWait();
+                    return;
+                }
 
-        if (title.equals("") ||  type.equals("") || author.equals("") ||qty.equals("") || borrowing.equals("")|| publish.equals("") || date.equals("") ) {
-            Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Fail");
-            alert.setHeaderText(null);
-            alert.setContentText("Please input all fields!!");
-            alert.showAndWait();
-        }else{
-             try(Connection conn = bookDB.getConnection()){
-            String sql = "INSERT INTO `Bookv2`(`btitle`, `bgenre`, `bAuthor`, `bQTY`, `borrowing`,`publish` ,`import`) VALUES (?,?,?,?,?,?,?)";
-            PreparedStatement pst = conn.prepareStatement(sql);
-            pst.setString(1, title );
-            pst.setString(2, type);
-            pst.setString(3, author);
-            pst.setString(4, qty);
-            pst.setString(5, borrowing);
-            pst.setString(6, publish);              
-            pst.setString(7, date);
-            
-            int CountRow = pst.executeUpdate();
-            if(CountRow >0){
-                System.out.println("Insert DONE...");
-                Alert alert = new Alert(AlertType.INFORMATION);
-                alert.setTitle("** Saved **");
-                alert.setHeaderText(null);
-                alert.setContentText("Insert Success.");
-                alert.showAndWait();
-            
-            }else{
-                Alert alert = new Alert(AlertType.WARNING);
-                alert.setTitle("!! Fail !!");
-                alert.setHeaderText(null);
-                alert.setContentText("Fail insert!!  (1)");
-                alert.showAndWait();
+                if (title.equals("") ||  type.equals("") || author.equals("") ||qty.equals("") || borrowing.equals("")|| publish.equals("") || date.equals("") ) {
+                    Alert alert = new Alert(AlertType.WARNING);
+                    alert.setTitle("Fail");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Please input all fields!!");
+                    alert.showAndWait();
+                }else{
+                    try(Connection conn = bookDB.getConnection()){
+                    String sql = "INSERT INTO `Bookv2`(`btitle`, `bgenre`, `bAuthor`, `bQTY`, `borrowing`,`publish` ,`import`) VALUES (?,?,?,?,?,?,?)";
+                    PreparedStatement pst = conn.prepareStatement(sql);
+                    pst.setString(1, title );
+                    pst.setString(2, type);
+                    pst.setString(3, author);
+                    pst.setString(4, qty);
+                    pst.setString(5, borrowing);
+                    pst.setString(6, publish);              
+                    pst.setString(7, date);
+                    
+                    int CountRow = pst.executeUpdate();
+                    if(CountRow >0){
+                        System.out.println("Insert DONE...");
+                        Alert alert = new Alert(AlertType.INFORMATION);
+                        alert.setTitle("** Saved **");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Insert Success.");
+                        alert.showAndWait();
+                    
+                    }else{
+                        Alert alert = new Alert(AlertType.WARNING);
+                        alert.setTitle("!! Fail !!");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Fail insert!!  (1)");
+                        alert.showAndWait();
+                    }
+                    refreshTable();
+                    showBook();
+                    clearTXTFeild();
+
+                } catch (SQLException e) {
+                    // TODO: handle exception
+                    e.printStackTrace();
+                    Alert alert = new Alert(AlertType.WARNING);
+                    alert.setTitle("Fail");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Fail insert");
+                    alert.showAndWait();
+                }
             }
-            refreshTable();
-            showBook();
-
-        } catch (SQLException e) {
-            // TODO: handle exception
-            e.printStackTrace();
-            Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Fail");
-            alert.setHeaderText(null);
-            alert.setContentText("Fail insert");
-            alert.showAndWait();
-        }
         }
        
     }
@@ -211,7 +226,7 @@ public class BOOKv2Controller implements Initializable{
 
             // Get the table view's selection model
             TableView.TableViewSelectionModel<listbookVariable> selectionModel = listPane.getSelectionModel();     
-            // Get the selected row
+            // Get the selected row  // display on txtFeild
             selecListbookVariable = selectionModel.getSelectedItem();
             addID.setText(selecListbookVariable.getID());
             addTitle.setText(selecListbookVariable.getTitle());
@@ -227,15 +242,15 @@ public class BOOKv2Controller implements Initializable{
         // }
     }
 
-    int index = -1;
-    listbookVariable book = null; 
-    Connection conn = null;
+    //int index = -1;
+    // listbookVariable book = null; 
+     Connection conn = null;
     PreparedStatement pst = null;
-    ResultSet rs = null;
+    // ResultSet rs = null;
      @FXML
     private void refreshTable(){
         try {
-           booklist.clear();
+          booklist.clear();
             String querry = "select from `Bookv2`";
             PreparedStatement pst = conn.prepareStatement(querry);
             ResultSet rs = pst.executeQuery();
@@ -258,10 +273,28 @@ public class BOOKv2Controller implements Initializable{
         } 
     }
 
+    private void clearTXTFeild(){ // to clear textfeild after button
+        addID.clear();
+        addTitle.clear();
+        addAuthor.clear();
+        addGenre.clear();
+        addPublish.clear();
+        txtborrow.clear();
+        addQty.clear();
+        addDate.getEditor().clear();
+        
+    }
     @FXML
     void handleDelete(ActionEvent event) throws IOException, SQLException{
         //listPane.getItems().removeAll(listPane.getSelectionModel().getSelectedItem());
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        boolean isIDEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addID,idtxtxError, "BookID is requires!!");
+        boolean istitleEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addTitle,titletxtxError, "Title is requires!!");
+        boolean isGenreEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addGenre,GenretxtError, "BookType is requires!!");
+ 
+        /// validation is from validaion Package/Folder
+        
+        if(isIDEmpty){
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
              
         //------------------------------------------------------------------------------------
             Alert alert = new Alert(AlertType.CONFIRMATION);
@@ -281,31 +314,42 @@ public class BOOKv2Controller implements Initializable{
                   //  JOptionPane.showMessageDialog(null,"Will you delete?");
                     refreshTable();
                     showBook();
-
+                    clearTXTFeild();
                 } catch (Exception e) {
                     // TODO: handle exception
                 }
              }
+        }
+        
         //---------------------------------------------------------------------------------------
     }
+
+
     @FXML
     void UpdateBookv2(ActionEvent event) throws IOException, SQLException {
-        conn = bookDB.getConnection();
-        String Bvalue1 = addID.getText();
-        String Bvalue2 = addTitle.getText();
-        String Bvalue3 = addGenre.getText();
-        String Bvalue4 = addAuthor.getText();
-        String Bvalue5 = addQty.getText();
-        String Bvalue6 = txtborrow.getText();
-        String Bvalue7 = addDate.getValue().toString();
-        String Bvalue8 = addPublish.getText();
+        boolean isIDEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addID,idtxtxError, "BookID is requires!!");
+        boolean istitleEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addTitle,titletxtxError, "Title is requires!!");
+        boolean isGenreEmpty = validation.TextFieldValidation.isTextFieldNotEmpty(addGenre,GenretxtError, "BookType is requires!!");
+        if(isIDEmpty || istitleEmpty ||isGenreEmpty){
+  
+            conn = bookDB.getConnection();
+            String Bvalue1 = addID.getText();
+            String Bvalue2 = addTitle.getText();
+            String Bvalue3 = addGenre.getText();
+            String Bvalue4 = addAuthor.getText();
+            String Bvalue5 = addQty.getText();
+            String Bvalue6 = txtborrow.getText();
+            String Bvalue7 = addDate.getValue().toString();
+            String Bvalue8 = addPublish.getText();
 
-        String sql = "update Bookv2 set bid='"+Bvalue1+"', btitle='"+Bvalue2+"',bgenre='"+Bvalue3+"',bAuthor='"+Bvalue4+"',bQTY='"+Bvalue5+"',borrowing='"+Bvalue6+"',import='"+Bvalue7+"',publish='"+Bvalue8+"' where bid = '"+Bvalue1+"'";
-        pst = conn.prepareStatement(sql);
-        pst.execute();
-        JOptionPane.showMessageDialog(null,"Up to date.");
-        refreshTable();
-        showBook();
+            String sql = "update Bookv2 set bid='"+Bvalue1+"', btitle='"+Bvalue2+"',bgenre='"+Bvalue3+"',bAuthor='"+Bvalue4+"',bQTY='"+Bvalue5+"',borrowing='"+Bvalue6+"',import='"+Bvalue7+"',publish='"+Bvalue8+"' where bid = '"+Bvalue1+"'";
+            pst = conn.prepareStatement(sql);
+            pst.execute();
+            JOptionPane.showMessageDialog(null,"Up to date.");
+            refreshTable();
+            showBook();
+            clearTXTFeild();
+        }
     }
 
     @FXML
