@@ -6,16 +6,9 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1068.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.HistoryController">
-   <bottom>
-      <VBox prefHeight="22.0" prefWidth="1068.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button fx:id="back" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#switchToGUI" prefHeight="59.0" prefWidth="116.0" text="Back" />
-         </children>
-      </VBox>
-   </bottom>
    <top>
       <TabPane prefHeight="553.0" prefWidth="1068.0" style="background: blue;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
@@ -60,4 +53,12 @@
         </tabs>
       </TabPane>
    </top>
+   <bottom>
+      <HBox prefHeight="23.0" prefWidth="1068.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToGUI" prefHeight="25.0" prefWidth="133.0" text="Back" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="New borrowing" />
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>
