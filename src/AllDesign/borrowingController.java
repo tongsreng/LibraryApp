@@ -1,4 +1,4 @@
-package AllDesign;
+package AllDesign.Borrowing_return;
 
 import java.io.IOException;
 
@@ -28,13 +28,13 @@ public class borrowingController {
     private DatePicker Due_Date;
 
     @FXML
-    private TextField First_name;
+    private TextField First_Name;
 
     @FXML
-    private TextField Last_name;
+    private TextField Last_Name;
 
     @FXML
-    private TextField StudentID;
+    private TextField Student_ID;
 
     @FXML
     private Button Submit;
@@ -43,7 +43,7 @@ public class borrowingController {
     private TextField phone;
 
     public void switchToGUI(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/AllDesign/GUI.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -54,7 +54,7 @@ public class borrowingController {
 }
     @FXML
     void switchToBorrow(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/borrowing.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/Borrowing_return/borrowing.fxml"));
         Parent welcomeParent = loader.load();
         Scene welcomeScene = new Scene(welcomeParent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow(); 

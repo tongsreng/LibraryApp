@@ -8,13 +8,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1068.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.HistoryController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="1068.0" style="-fx-background-color: #ACB1D6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.Borrowing_return.HistoryController">
    <top>
       <TabPane prefHeight="553.0" prefWidth="1068.0" style="background: blue;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab fx:id="Borrowing" text="Borrowing">
-               <content>
-                  <TableView prefHeight="540.0" prefWidth="1068.0" style="-fx-background-color: #ACB1D6;">
+    <content>
+        <TableView fx:id="BorrowingTable" prefHeight="540.0" prefWidth="1068.0" style="-fx-background-color: #ACB1D6;">
                     <columns>
                       <TableColumn fx:id="StudentID" prefWidth="117.0" text="Student ID" />
                       <TableColumn fx:id="Name" prefWidth="279.0" style="-fx-font-color: red;" text="Student Name">
@@ -44,8 +44,8 @@
                         <TableColumn fx:id="BookID1" prefWidth="139.0" text="Book ID" />
                         <TableColumn fx:id="Phonenumber1" prefWidth="119.0" text="Phone number" />
                         <TableColumn fx:id="Duedate1" prefWidth="135.0" text="Due date" />
-                        <TableColumn fx:id="Staus1" prefWidth="115.0" text="Status" />
-                        <TableColumn fx:id="Other" prefWidth="153.0" text="Other" />
+                        <TableColumn fx:id="Status1" prefWidth="115.0" text="Status" />
+                        <TableColumn fx:id="Other1" prefWidth="153.0" text="Other" />
                     </columns>
                   </TableView>
                </content>
@@ -57,7 +57,7 @@
       <HBox prefHeight="23.0" prefWidth="1068.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#switchToGUI" prefHeight="25.0" prefWidth="133.0" text="Back" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="New borrowing" />
+            <Button mnemonicParsing="false" onAction="#switchToBorrow" prefHeight="25.0" prefWidth="133.0" text="New borrowing" />
          </children>
       </HBox>
    </bottom>
