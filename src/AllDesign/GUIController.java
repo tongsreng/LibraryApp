@@ -115,7 +115,7 @@ public class GUIController {
     }
 
     public void switchToHistoryBook(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Historysheets.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/AllDesign/Borrowing_return/Historysheets.fxml"));
         Parent welcomeParent = loader.load();
         Scene welcomeScene = new Scene(welcomeParent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -124,7 +124,7 @@ public class GUIController {
     }
 
     public void switchToBorrow(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("borrowing.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/AllDesign/Borrowing_return/borrowing.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
