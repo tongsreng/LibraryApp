@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="tableViewList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="949.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.Books.BOOKv2Controller">
+<AnchorPane fx:id="tableViewList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="949.0" style="-fx-background-color: #DBDFEA;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.Books.BOOKv2Controller">
    <children>
       <TableView fx:id="listPane" layoutX="254.0" layoutY="50.0" onMouseClicked="#selectItem" prefHeight="593.0" prefWidth="697.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="50.0">
          <columns>
@@ -24,21 +24,21 @@
             <TableColumn fx:id="publish" prefWidth="83.3333740234375" style="-fx-background-color: #ACB1D6;" text="Publish" />
          </columns>
       </TableView>
-      <Button fx:id="backBTN" layoutX="137.0" layoutY="653.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #FFEAD2; -fx-border-color: #FFEAD2; -fx-cursor: hand;" text="Back">
+      <Button fx:id="backBTN" layoutX="136.0" layoutY="650.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #D3D3D3; -fx-cursor: hand;" text="Back" textFill="#191919">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
          <effect>
             <DropShadow height="11.0" radius="5.0" width="11.0" />
          </effect></Button>
-      <Button fx:id="DeleteBookBtn" layoutX="137.0" layoutY="599.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="34.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Delete book">
+      <Button fx:id="DeleteBookBtn" layoutX="135.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Delete book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
          <effect>
             <DropShadow height="9.75" radius="4.4375" width="10.0" />
          </effect></Button>
-      <Button fx:id="updatebtn" layoutX="22.0" layoutY="653.0" mnemonicParsing="false" onAction="#UpdateBookv2" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Update book">
+      <Button fx:id="updatebtn" layoutX="27.0" layoutY="650.0" mnemonicParsing="false" onAction="#UpdateBookv2" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Update book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -46,7 +46,7 @@
             <DropShadow height="9.75" radius="4.4375" width="10.0" />
          </effect>
       </Button>
-      <Button fx:id="AddBookBtn" layoutX="22.0" layoutY="598.0" mnemonicParsing="false" onAction="#handleAddBK" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Add book">
+      <Button fx:id="AddBookBtn" layoutX="27.0" layoutY="602.0" mnemonicParsing="false" onAction="#handleAddBK" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Add book" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -54,61 +54,61 @@
             <DropShadow height="9.75" radius="4.4375" width="10.0" />
          </effect>
       </Button>
-      <Label layoutX="456.0" layoutY="5.0" text="Book's  Informations">
+      <Label layoutX="485.0" layoutY="7.0" text="Book's  Informations">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
       <Label layoutX="261.0" layoutY="401.0" />
-      <TextField fx:id="addAuthor" layoutX="30.0" layoutY="276.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book author" style="-fx-background-color: #F8F6F4;" />
-      <TextField fx:id="addGenre" layoutX="30.0" layoutY="210.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Genre" style="-fx-background-color: #F8F6F4;" />
-      <TextField fx:id="addTitle" layoutX="30.0" layoutY="151.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book title" style="-fx-background-color: #F8F6F4;" />
-      <TextField fx:id="addID" layoutX="30.0" layoutY="88.0" onMouseClicked="#autoGenerate" prefHeight="34.0" prefWidth="188.0" promptText="Input book ID" style="-fx-background-color: #F8F6F4;" />
-      <TextField fx:id="addQty" layoutX="30.0" layoutY="346.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of book" style="-fx-background-color: #F8F6F4;" />
-      <TextField fx:id="addPublish" layoutX="30.0" layoutY="477.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book Publish" style="-fx-background-color: #F8F6F4;" />
-      <DatePicker fx:id="addDate" layoutX="30.0" layoutY="549.0" prefHeight="31.0" prefWidth="187.0" promptText="pickdate" style="-fx-background-color: white;" />
-      <Label layoutX="31.0" layoutY="188.0" text="Genre" textFill="#8294c4">
+      <TextField fx:id="addAuthor" layoutX="25.0" layoutY="275.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book author" style="-fx-background-color: white;" />
+      <TextField fx:id="addGenre" layoutX="25.0" layoutY="209.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book Genre" style="-fx-background-color: white;" />
+      <TextField fx:id="addTitle" layoutX="25.0" layoutY="150.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book title" style="-fx-background-color: white;" />
+      <TextField fx:id="addID" layoutX="25.0" layoutY="87.0" onMouseClicked="#autoGenerate" prefHeight="34.0" prefWidth="204.0" promptText="Input book ID" style="-fx-background-color: white;" />
+      <TextField fx:id="addQty" layoutX="25.0" layoutY="345.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book number of book" style="-fx-background-color: white;" />
+      <TextField fx:id="addPublish" layoutX="25.0" layoutY="476.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book Publish" style="-fx-background-color: white;" />
+      <DatePicker fx:id="addDate" layoutX="24.0" layoutY="548.0" prefHeight="31.0" prefWidth="204.0" promptText="pickdate" style="-fx-background-color: white;" />
+      <Label layoutX="26.0" layoutY="187.0" text="Genre" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="127.0" text="Title" textFill="#8294c4">
+      <Label layoutX="26.0" layoutY="126.0" text="Title" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="63.0" text="ID" textFill="#8294c4">
+      <Label layoutX="26.0" layoutY="62.0" text="ID" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="252.0" text="Author" textFill="#8294c4">
+      <Label layoutX="26.0" layoutY="251.0" text="Author" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="452.0" text="Publish" textFill="#8294c4">
+      <Label layoutX="26.0" layoutY="451.0" text="Publish" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="321.0" text="QTY" textFill="#8294c4">
+      <Label layoutX="26.0" layoutY="320.0" text="QTY" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="32.0" layoutY="523.0" text="Imort Date" textFill="#8294c4">
+      <Label layoutX="27.0" layoutY="522.0" text="Imort Date" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="70.0" layoutY="12.0" text="Input field" textFill="#8294c4">
+      <Label layoutX="61.0" layoutY="25.0" text="Input field" textFill="#8294c4">
          <font>
             <Font name="Georgia Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="txtborrow" layoutX="30.0" layoutY="412.0" prefHeight="34.0" prefWidth="188.0" promptText="Input book number of borrowed" style="-fx-background-color: #F8F6F4;" />
-      <Label layoutX="30.0" layoutY="387.0" text="Borrowing" textFill="#8294c4">
+      <TextField fx:id="txtborrow" layoutX="25.0" layoutY="411.0" prefHeight="34.0" prefWidth="204.0" promptText="Input book number of borrowed" style="-fx-background-color: white;" />
+      <Label layoutX="25.0" layoutY="386.0" text="Borrowing" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="18.0" />
          </font>

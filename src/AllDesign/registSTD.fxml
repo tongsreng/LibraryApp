@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.RegisterController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.RegisterController">
    <children>
-      <Label fx:id="labelRegis" layoutX="96.0" layoutY="16.0" prefHeight="41.0" prefWidth="314.0" text="Registering Student" textFill="#688deb">
+      <Label fx:id="labelRegis" layoutX="84.0" layoutY="38.0" prefHeight="41.0" prefWidth="301.0" text="Registering Student" textFill="#688deb">
          <font>
             <Font name="Georgia" size="34.0" />
          </font>
@@ -27,63 +27,63 @@
             </Lighting>
          </effect>
       </Label>
-      <Label layoutX="38.0" layoutY="108.0" text="Student Name" textFill="#8294c4">
+      <Label layoutX="57.0" layoutY="112.0" text="Student Name" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="290.0" layoutY="108.0" text="ID" textFill="#8294c4">
+      <Label layoutX="265.0" layoutY="112.0" text="ID" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="38.0" layoutY="179.0" text="Gender" textFill="#8294c4">
+      <Label layoutX="57.0" layoutY="183.0" text="Gender" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="289.0" layoutY="174.0" text="Department" textFill="#8294c4">
+      <Label layoutX="264.0" layoutY="178.0" text="Department" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putName" layoutX="37.0" layoutY="129.0" />
-      <TextField fx:id="putID" layoutX="289.0" layoutY="129.0" />
-      <TextField fx:id="putDep" layoutX="287.0" layoutY="195.0" />
-      <TextField fx:id="putGender" layoutX="37.0" layoutY="195.0" />
-      <Label layoutX="37.0" layoutY="243.0" text="DOB" textFill="#8294c4">
+      <TextField fx:id="putName" layoutX="56.0" layoutY="133.0" />
+      <TextField fx:id="putID" layoutX="264.0" layoutY="133.0" />
+      <TextField fx:id="putDep" layoutX="262.0" layoutY="199.0" />
+      <TextField fx:id="putGender" layoutX="56.0" layoutY="199.0" />
+      <Label layoutX="56.0" layoutY="247.0" text="DOB" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="287.0" layoutY="310.0" text="Contact" textFill="#8294c4">
+      <Label layoutX="262.0" layoutY="314.0" text="Contact" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="288.0" layoutY="239.0" text="Social Account" textFill="#8294c4">
+      <Label layoutX="263.0" layoutY="243.0" text="Social Account" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="308.0" text="Address" textFill="#8294c4">
+      <Label layoutX="55.0" layoutY="312.0" text="Address" textFill="#8294c4">
          <font>
             <Font name="Georgia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="putEmauil" layoutX="286.0" layoutY="259.0" promptText="itc_gic_i3@gamail.com" />
-      <TextField fx:id="putAdd" layoutX="36.0" layoutY="328.0" />
-      <TextField fx:id="putCont" layoutX="285.0" layoutY="328.0" />
-      <Button layoutX="42.0" layoutY="439.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Back">
+      <TextField fx:id="putEmauil" layoutX="261.0" layoutY="263.0" promptText="itc_gic_i3@gamail.com" />
+      <TextField fx:id="putAdd" layoutX="55.0" layoutY="332.0" />
+      <TextField fx:id="putCont" layoutX="260.0" layoutY="332.0" />
+      <Button layoutX="115.0" layoutY="398.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #D3D3D3; -fx-cursor: hand; -fx-background-radius: 50;" text="Back" textFill="#625e5e">
          <font>
-            <Font name="Georgia" size="12.0" />
+            <Font name="Georgia" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="360.0" layoutY="437.0" mnemonicParsing="false" onAction="#switchToStudentList" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand;" text="Register" textFill="#2f3667">
+      <Button layoutX="264.0" layoutY="398.0" mnemonicParsing="false" onAction="#switchToStudentList" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-background-radius: 50;" text="Register" textFill="WHITE">
          <font>
-            <Font name="Georgia" size="12.0" />
+            <Font name="Georgia" size="14.0" />
          </font>
       </Button>
-      <DatePicker fx:id="DOBpicker" layoutX="37.0" layoutY="261.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="DOBpicker" layoutX="56.0" layoutY="265.0" prefHeight="25.0" prefWidth="149.0" />
    </children>
 </Pane>

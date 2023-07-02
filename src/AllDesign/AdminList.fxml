@@ -10,8 +10,8 @@
    <children>
       <AnchorPane prefHeight="410.0" prefWidth="120.0" style="-fx-background-color: #DBDFEA;">
          <children>
-            <Button fx:id="regisSTDmore" layoutX="9.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToRegistAdmin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Add Admin" />
-            <Button fx:id="btn_home" layoutX="9.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToRegistAdmin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 5;" text="Home" />
+            <Button fx:id="regisSTDmore" layoutX="9.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToRegistAdmin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 25;" text="Add Admin" textFill="WHITE" />
+            <Button fx:id="btn_home" layoutX="9.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #D3D3D3; -fx-cursor: hand; -fx-border-radius: 50;" text="Home" textFill="#5c5a5a" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="685.0">
