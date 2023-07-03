@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.Admin.AdminTableController">
+   <children>
+      <AnchorPane prefHeight="410.0" prefWidth="120.0" style="-fx-background-color: #DBDFEA;">
+         <children>
+            <Button fx:id="regisSTDmore" layoutX="9.0" layoutY="323.0" mnemonicParsing="false" onAction="#switchToRegistAdmin" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #ACB1D6; -fx-cursor: hand; -fx-border-radius: 25;" text="Add Admin" textFill="WHITE" />
+            <Button fx:id="btn_home" layoutX="9.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="27.0" prefWidth="86.0" style="-fx-background-color: #D3D3D3; -fx-cursor: hand; -fx-border-radius: 50;" text="Home" textFill="#5c5a5a" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="410.0" prefWidth="685.0">
+         <children>
+            <TableView fx:id="listView" layoutX="-9.0" layoutY="-1.0" prefHeight="410.0" prefWidth="681.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="idCol" maxWidth="100.0" prefWidth="50.666656494140625" style="-fx-background-color: #ACB1D6;" text="ID" />
+                <TableColumn fx:id="snameCol" prefWidth="63.99999749660492" style="-fx-background-color: #ACB1D6;" text="Name" />
+                  <TableColumn fx:id="genderCol" maxWidth="100.0" prefWidth="73.33331298828125" style="-fx-background-color: #ACB1D6;" text="Gender" />
+                  <TableColumn fx:id="dptCol" prefWidth="68.66668701171875" style="-fx-background-color: #ACB1D6;" text="Department" />
+                  <TableColumn fx:id="contCol" prefWidth="76.6666259765625" style="-fx-background-color: #ACB1D6;" text="Contact" />
+                  <TableColumn fx:id="adrsCol" prefWidth="62.0" style="-fx-background-color: #ACB1D6;" text="Address" />
+                  <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="65.333251953125" style="-fx-background-color: #ACB1D6;" text="Email" />
+                  <TableColumn fx:id="dobCol" maxWidth="300.0" minWidth="68.00006103515625" prefWidth="68.00006103515625" style="-fx-background-color: #ACB1D6;" text="DOB" />
+                  <TableColumn fx:id="pass" prefWidth="75.0" style="-fx-background-color: #ACB1D6;" text="Password" />
+                  <TableColumn fx:id="repass" prefWidth="75.0" style="-fx-background-color: #ACB1D6;" text="Repassword" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

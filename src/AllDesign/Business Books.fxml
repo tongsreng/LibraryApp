@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+   <children>
+      <Button layoutX="7.0" layoutY="4.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="683.0" text="Welcome to Business Books">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="9.0" layoutY="2.0" mnemonicParsing="false" onAction="#switchToManageBook" prefHeight="43.0" prefWidth="96.0" text="&lt;  Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="57.0" layoutX="7.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" width="683.0" />
+      <Text fill="WHITE" layoutX="16.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID" wrappingWidth="82.93670272827148">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="251.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     Book Title" wrappingWidth="138.1367301940918">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="523.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Author" wrappingWidth="138.1367301940918">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="002" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="003" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="004" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="005" wrappingWidth="82.93670272827143" />
+      <Text layoutX="16.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="006" wrappingWidth="82.93670272827143" />
+      <Text layoutX="535.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AA" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Economic" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finance" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="International" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Martkiting" wrappingWidth="113.33672714233393" />
+      <Text layoutX="275.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Careers" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BB" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CC" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DD" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EE" wrappingWidth="113.33672714233393" />
+      <Text layoutX="535.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FF" wrappingWidth="113.33672714233393" />
+   </children>
+</AnchorPane>

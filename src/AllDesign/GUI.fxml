@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="596.0" style="-fx-background-color: #FFEAD2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AllDesign.GUIController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#switchToHistoryBook" prefHeight="400.0" prefWidth="582.0" style="-fx-background-color: #ACB1D6;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button layoutX="48.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToListbook" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="List books" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Button layoutX="313.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToAdminList" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="Admin Information" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Button layoutX="48.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToManageCategory" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="Manage books categories" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Button layoutX="313.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToCopyofBook" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="Make new copies of books" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Button layoutX="48.0" layoutY="263.0" mnemonicParsing="false" onAction="#switchToHistoryBook" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="Borrow /Return Record" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Button layoutX="313.0" layoutY="263.0" mnemonicParsing="false" onAction="#switchToBorrow" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #FFEAD2; -fx-cursor: hand; -fx-background-radius: 25;" text="Register New Borrowing books" textFill="#000000cc">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></Button>
+            <Text layoutX="195.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library App">
+               <font>
+                  <Font name="Georgia" size="36.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="171.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today a reader, tomrrow a leader">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
