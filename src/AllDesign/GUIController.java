@@ -91,7 +91,7 @@ public class GUIController {
     }
 
     public void switchToAdminList(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("AdminList.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/AllDesign/Admin/AdminList2.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
